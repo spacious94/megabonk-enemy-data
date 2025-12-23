@@ -5,7 +5,7 @@
     "damage": 11.0,
     "knockback": 2.0,
     "critChance": 0.05,
-    "element": "Physical",
+    "element": "Neutral",
     "elementId": 0,
     "procCoefficient": 1.0
   },

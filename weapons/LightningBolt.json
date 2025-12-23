@@ -5,7 +5,7 @@
     "damage": 7.0,
     "knockback": 1.0,
     "critChance": 0.0,
-    "element": "Fire",
+    "element": "Lightning",
     "elementId": 1,
     "procCoefficient": 1.0
   },

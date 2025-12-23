@@ -122,7 +122,7 @@ Extracted game statistics from **Megabonk**.
 | `damage` | float | Base damage per hit |
 | `knockback` | float | Knockback force |
 | `critChance` | float | Base critical hit chance (0.0-1.0) |
-| `element` | string | Damage type (Physical, Fire, Ice, Lightning, Poison) |
+| `element` | string | Damage type (Neutral, Lightning, Ice, Fire, Bleed) |
 | `procCoefficient` | float | Multiplier for on-hit effects |
 | `projectile.count` | int | Number of projectiles per attack |
 | `projectile.bounces` | int | Times projectiles can bounce |
@@ -136,36 +136,36 @@ Extracted game statistics from **Megabonk**.
 
 | Weapon | Damage | Knockback | Element | Cooldown | Projectiles |
 |--------|--------|-----------|---------|----------|-------------|
-| Sniper | 22 | 4.0 | Physical | 1.0 | 1 |
-| DragonsBreath | 16 | 0.5 | Physical | 0.6 | 1 |
-| Shotgun | 14 | 2.0 | Physical | 0.9 | 6 |
-| Chunkers | 12 | 2.5 | Physical | 1.0 | 1 |
-| CorruptedSword | 12 | 2.0 | Physical | 0.7 | 1 |
-| HeroSword | 11 | 2.0 | Physical | 0.7 | 1 |
-| Bone | 11 | 1.25 | Physical | 0.75 | 1 |
-| Sword | 11 | 2.0 | Physical | 0.75 | 1 |
-| Aegis | 10 | 3.0 | Physical | 1.2 | 1 |
-| FireStaff | 10 | 1.0 | Physical | 0.6 | 1 |
-| Katana | 10 | 1.5 | Physical | 0.65 | 1 |
-| Bananarang | 9 | 1.0 | Physical | 0.65 | 1 |
-| BloodMagic | 9 | 1.0 | Physical | 0.8 | 1 |
-| Bow | 9 | 0.5 | Physical | 0.45 | 1 |
-| Dexecutioner | 9 | 1.0 | Physical | 0.6 | 1 |
-| FrostWalker | 9 | 0.5 | Physical | 0.6 | 1 |
-| Scythe | 9 | 1.0 | Physical | 0.5 | 1 |
-| Revolver | 8 | 0.75 | Physical | 0.5 | 1 |
-| SpaceNoodle | 7 | 1.5 | Physical | 0.7 | 1 |
-| Axe | 6 | 1.0 | Physical | 0.75 | 3 |
-| Aura | 6 | 0.5 | Physical | 1.0 | 1 |
+| Sniper | 22 | 4.0 | Neutral | 1.0 | 1 |
+| DragonsBreath | 16 | 0.5 | Fire | 0.6 | 1 |
+| Shotgun | 14 | 2.0 | Neutral | 0.9 | 6 |
+| Chunkers | 12 | 2.5 | Neutral | 1.0 | 1 |
+| CorruptedSword | 12 | 2.0 | Neutral | 0.7 | 1 |
+| HeroSword | 11 | 2.0 | Neutral | 0.7 | 1 |
+| Bone | 11 | 1.25 | Neutral | 0.75 | 1 |
+| Sword | 11 | 2.0 | Neutral | 0.75 | 1 |
+| Aegis | 10 | 3.0 | Neutral | 1.2 | 1 |
+| FireStaff | 10 | 1.0 | Fire | 0.6 | 1 |
+| Katana | 10 | 1.5 | Neutral | 0.65 | 1 |
+| Bananarang | 9 | 1.0 | Neutral | 0.65 | 1 |
+| BloodMagic | 9 | 1.0 | Neutral | 0.8 | 1 |
+| Bow | 9 | 0.5 | Neutral | 0.45 | 1 |
+| Dexecutioner | 9 | 1.0 | Neutral | 0.6 | 1 |
+| FrostWalker | 9 | 0.5 | Ice | 0.6 | 1 |
+| Scythe | 9 | 1.0 | Neutral | 0.5 | 1 |
+| Revolver | 8 | 0.75 | Neutral | 0.5 | 1 |
+| SpaceNoodle | 7 | 1.5 | Neutral | 0.7 | 1 |
+| Axe | 6 | 1.0 | Neutral | 0.75 | 3 |
+| Aura | 6 | 0.5 | Neutral | 1.0 | 1 |
 | LightningBolt | 6 | 0.5 | Lightning | 0.6 | 1 |
-| SluttyRocket | 6 | 3.0 | Physical | 0.9 | 1 |
-| Tornado | 6 | 0.5 | Physical | 0.8 | 1 |
-| FlameWalker | 5 | 0.0 | Physical | 0.6 | 1 |
-| WirelessDagger | 5 | 0.5 | Physical | 0.4 | 1 |
-| BlackHole | 4.5 | 6.0 | Physical | 1.0 | 1 |
-| Mines | 3 | 5.0 | Physical | 0.65 | 1 |
-| PoisonFlask | 3 | 0.5 | Poison | 0.6 | 1 |
-| Dice | 0 | 2.5 | Physical | 0.5 | 1 |
+| SluttyRocket | 6 | 3.0 | Neutral | 0.9 | 1 |
+| Tornado | 6 | 0.5 | Neutral | 0.8 | 1 |
+| FlameWalker | 5 | 0.0 | Fire | 0.6 | 1 |
+| WirelessDagger | 5 | 0.5 | Lightning | 0.4 | 1 |
+| BlackHole | 4.5 | 6.0 | Neutral | 1.0 | 1 |
+| Mines | 3 | 5.0 | Neutral | 0.65 | 1 |
+| PoisonFlask | 3 | 0.5 | Neutral | 0.6 | 1 |
+| Dice | 0 | 2.5 | Neutral | 0.5 | 1 |
 
 ## Enemy Summary
 

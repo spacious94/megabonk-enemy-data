@@ -72,6 +72,16 @@ Extracted game statistics from **Megabonk**.
 | `xp` | int | Experience reward on kill |
 | `canBeElite` | bool | Can spawn as elite variant |
 | `creditCost` | float | Spawn cost in wave budget |
+| `isBoss` | bool | (Boss enemies only) Marked as boss at spawn time |
+
+### Boss Flag Note
+
+Some enemies are flagged as **bosses at spawn time** using the game's `EEnemyFlag` system (Boss, StageBoss, FinalBoss, etc.). This runtime flag **prevents execution** regardless of what the `canBeExecuted` field says in the data.
+
+Boss enemies have `"isBoss": true` in their data files. These include:
+- **Minibosses**: Miniboss_Pig, Miniboss_Golem, Miniboss_Desert_Golem, Miniboss_Scorpion, Miniboss_Ghostham, Miniboss_SkeletonKing
+- **Stage Bosses**: Pharaoh1, Pharaoh2, Pharaoh3, EntStage1, EntStage2, EntStage3
+- **Special Bosses**: GhostKing, Bandit, Bush
 
 ---
 

@@ -34,5 +34,7 @@
   "rendering": {
     "scale": 1.1,
     "colliderRadius": 8.0
-  }
+  },
+  "isBoss": true,
+  "_bossNote": "This enemy is flagged as a Boss at spawn time (EEnemyFlag.Boss/StageBoss). The boss flag prevents execution regardless of the canBeExecuted value in the data."
 }

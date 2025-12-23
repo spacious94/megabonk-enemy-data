@@ -2,11 +2,56 @@
   "name": "Bonker",
   "itemId": 3,
   "internalName": "Bonker",
+  "className": "ItemBonker",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "AOEDamage",
+      "description": "Chance to deal massive AOE damage on hit",
+      "chance": {
+        "baseValue": 0.02,
+        "perStack": 0.015,
+        "scaling": "linear",
+        "formula": "0.02 + (stacks - 1) * 0.015"
+      },
+      "damage": {
+        "baseMultiplier": 20.0,
+        "perStack": 10.0,
+        "formula": "baseDamage * (20 + (stacks - 1) * 10)"
+      },
+      "radius": {
+        "base": 6.0,
+        "perStack": 1.0,
+        "max": 10.0,
+        "formula": "min(6 + stacks * 1, 10)"
+      },
+      "maxProcsPerTick": 5
+    }
+  ],
+  "fields": {
+    "baseChance": 0.02,
+    "baseDamageMultiplier": 20.0,
+    "chancePerStack": 0.015,
+    "damageMultiplierPerStack": 10.0,
+    "radiusPerStack": 1.0,
+    "radius": 3.5,
+    "maxRadius": 10.0,
+    "maxProcsPerTick": 5
+  },
+  "implementation": {
+    "constructorRVA": "0x43D360",
+    "onInitOrAmountChangedRVA": "0x43CE00",
+    "procOnHitEffectsRVA": "0x43CE70",
+    "tickRVA": "0x43D350",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

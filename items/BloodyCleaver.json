@@ -2,11 +2,41 @@
   "name": "Bloody Cleaver",
   "itemId": 62,
   "internalName": "BloodyCleaver",
+  "className": "ItemBloodyCleaver",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 15,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "BloodmarkOnLifesteal",
+      "description": "Chance to apply bloodmark stacks when lifesteal procs",
+      "bloodmarkStacks": {
+        "base": "bloodmarkStacksPerLifestealPerAmount",
+        "formula": "amount * bloodmarkStacksPerLifestealPerAmount"
+      },
+      "bloodmarkChance": {
+        "base": "bloodmarkChancePerAmount",
+        "formula": "amount * bloodmarkChancePerAmount"
+      }
+    }
+  ],
+  "fields": {
+    "bloodmarkStacksPerLifestealPerAmount": "extracted from constructor",
+    "bloodmarkChancePerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x43A4A0",
+    "initRVA": "0x439DD0",
+    "cleanupRVA": "0x439AD0",
+    "onInitOrAmountChangedRVA": "0x439F20",
+    "procOnHitEffectsRVA": "0x43A000",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

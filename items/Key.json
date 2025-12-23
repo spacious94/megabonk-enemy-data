@@ -2,11 +2,35 @@
   "name": "Key",
   "itemId": 0,
   "internalName": "Key",
+  "className": "ItemKey",
   "rarity": "Common",
   "rarityId": 0,
   "maxAmount": 0,
   "price": 3,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnChestOpen",
+      "effect": "ExtraItem",
+      "description": "Chance to get an extra item from chests",
+      "chance": {
+        "baseValue": 0.1,
+        "scaling": "linear",
+        "formula": "stacks * 0.1"
+      }
+    }
+  ],
+  "fields": {
+    "chancePerStack": 0.1,
+    "currentChance": 0.1
+  },
+  "implementation": {
+    "constructorRVA": "0x495D80",
+    "onInitOrAmountChangedRVA": "0x495D20",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

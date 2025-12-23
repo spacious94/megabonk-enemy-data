@@ -1,12 +1,41 @@
 {
-  "name": "Glove Poison",
+  "name": "Poison Glove",
   "itemId": 73,
   "internalName": "GlovePoison",
+  "className": "ItemGlovesPoison",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 5,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "PoisonAOE",
+      "description": "On hit, deal poison damage in an area and apply poison stacks (cooldown-based)",
+      "damage": {
+        "base": "baseDamageMultiplier",
+        "formula": "Uses base damage multiplier"
+      },
+      "radius": "baseRadius",
+      "poisonStacks": "poisonStacksPerAmount",
+      "cooldown": "cooldown field"
+    }
+  ],
+  "fields": {
+    "cooldown": "extracted from constructor",
+    "baseDamageMultiplier": "extracted from constructor",
+    "baseRadius": "extracted from constructor",
+    "poisonStacksPerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x446FA0",
+    "procOnHitEffectsRVA": "0x4469D0",
+    "getDamageRVA": "0x446940",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

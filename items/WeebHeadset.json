@@ -1,0 +1,45 @@
+{
+  "name": "Weeb Headset",
+  "itemId": 50,
+  "internalName": "WeebHeadset",
+  "className": "ItemWeebHeadset",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 5,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "CharmEnemy",
+      "description": "Chance to charm enemies on hit",
+      "charmChance": {
+        "base": 0.02,
+        "perStack": 0.02,
+        "formula": "amount * 0.02"
+      },
+      "charmDuration": {
+        "base": 1.5,
+        "perStack": 1.5,
+        "formula": "amount * 1.5"
+      },
+      "maxProcsPerTick": 100
+    }
+  ],
+  "fields": {
+    "charmChancePerAmount": 0.02,
+    "durationPerAmount": 1.5,
+    "maxProcsPerTick": 100
+  },
+  "implementation": {
+    "constructorRVA": "0x45D6E0",
+    "onInitOrAmountChangedRVA": "0x45D5D0",
+    "procOnHitEffectsRVA": "0x45D640",
+    "tickRVA": "0x45D6D0",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
+}

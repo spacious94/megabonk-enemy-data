@@ -2,11 +2,46 @@
   "name": "Energy Core",
   "itemId": 44,
   "internalName": "EnergyCore",
+  "className": "ItemEnergyCore",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 11,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "OrbitingOrbs",
+      "description": "Spawns orbiting energy orbs that fire at enemies",
+      "orbs": {
+        "base": 4,
+        "perStack": 2,
+        "formula": "4 + (amount - 1) * 2"
+      },
+      "range": 70.0,
+      "cooldown": {
+        "base": 4.0,
+        "perOrb": 0.2,
+        "formula": "4.0 - numOrbs * 0.2"
+      }
+    }
+  ],
+  "fields": {
+    "orbsPerAmount": 2,
+    "numOrbs": 4,
+    "range": 70.0,
+    "cooldown": 4.0,
+    "cooldownPerOrb": 0.2
+  },
+  "implementation": {
+    "constructorRVA": "0x45FBE0",
+    "fireOrbRVA": "0x45F690",
+    "getDamageRVA": "0x45FA00",
+    "tickRVA": "0x45FA50",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

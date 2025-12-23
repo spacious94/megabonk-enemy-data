@@ -1,12 +1,41 @@
 {
-  "name": "Gloves Bloody",
+  "name": "Blood Glove",
   "itemId": 74,
   "internalName": "GloveBlood",
+  "className": "ItemGlovesBlood",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "BloodAOEWithHeal",
+      "description": "On hit, deal blood damage in an area and heal (cooldown-based)",
+      "damage": {
+        "base": "baseDamageMultiplier",
+        "formula": "Uses base damage multiplier"
+      },
+      "radius": "baseRadius",
+      "healPercentage": "healPercentage",
+      "cooldown": "cooldown field"
+    }
+  ],
+  "fields": {
+    "cooldown": "extracted from constructor",
+    "baseDamageMultiplier": "extracted from constructor",
+    "baseRadius": "extracted from constructor",
+    "healPercentage": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x445600",
+    "procOnHitEffectsRVA": "0x444F70",
+    "getDamageRVA": "0x444DA0",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

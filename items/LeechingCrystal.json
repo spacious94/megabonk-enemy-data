@@ -2,11 +2,41 @@
   "name": "Leeching Crystal",
   "itemId": 66,
   "internalName": "LeechingCrystal",
+  "className": "ItemLeechingCrystal",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "MaxHealth",
+      "statId": 0,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": "amount * maxHpPerAmount",
+      "description": "+HP based on maxHpPerAmount field"
+    },
+    {
+      "stat": "HpRegen",
+      "statId": 1,
+      "modifyType": "Addition",
+      "modifyTypeId": 0,
+      "baseValue": "amount * regenAdditivePerAmount",
+      "description": "+HP regen based on regenAdditivePerAmount field"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "regenAdditivePerAmount": "extracted from constructor",
+    "maxHpPerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x44C5A0",
+    "onInitOrAmountChangedRVA": "0x44C4D0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

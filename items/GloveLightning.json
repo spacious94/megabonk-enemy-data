@@ -1,12 +1,39 @@
 {
-  "name": "Glove Lightning",
+  "name": "Lightning Glove",
   "itemId": 72,
   "internalName": "GloveLightning",
+  "className": "ItemGlovesLightning",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "LightningAOE",
+      "description": "On hit, deal lightning damage in an area (cooldown-based)",
+      "damage": {
+        "base": "baseDamageMultiplier",
+        "formula": "Uses base damage multiplier"
+      },
+      "radius": "baseRadius",
+      "cooldown": "cooldown field"
+    }
+  ],
+  "fields": {
+    "cooldown": "extracted from constructor",
+    "baseDamageMultiplier": "extracted from constructor",
+    "baseRadius": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x446880",
+    "procOnHitEffectsRVA": "0x446280",
+    "getDamageRVA": "0x446110",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

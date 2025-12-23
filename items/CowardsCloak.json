@@ -2,11 +2,54 @@
   "name": "Cowards Cloak",
   "itemId": 5,
   "internalName": "CowardsCloak",
+  "className": "ItemCowardsCloak",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "MoveSpeedMultiplier",
+      "statId": 25,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.05,
+      "scaling": "linear",
+      "formula": "amount * 0.05",
+      "description": "+5% base move speed per stack"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "OnDamageTaken",
+      "effect": "TemporarySpeedBuff",
+      "description": "When hit, gain temporary speed stacks",
+      "stacksGained": {
+        "perItem": 2,
+        "formula": "amount * 2"
+      },
+      "maxStacks": 2,
+      "speedPerStack": 0.30,
+      "duration": "until hit again"
+    }
+  ],
+  "fields": {
+    "speedPerAmount": 0.05,
+    "speedPerStack": 0.30,
+    "maxStacks": 2,
+    "stacksPerAmount": 2
+  },
+  "implementation": {
+    "constructorRVA": "0x455B00",
+    "initRVA": "0x4558E0",
+    "cleanupRVA": "0x4558A0",
+    "onDamageRVA": "0x455A70",
+    "onInitOrAmountChangedRVA": "0x455AB0",
+    "tickRVA": "0x455BA0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

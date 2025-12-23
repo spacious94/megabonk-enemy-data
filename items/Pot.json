@@ -1,12 +1,39 @@
 {
-  "name": "PotSteel",
+  "name": "Steel Pot",
   "itemId": 84,
   "internalName": "Pot",
+  "className": "ItemPotSteel",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 21,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "IncreaseLevelCaps",
+      "description": "Increases the maximum level cap for weapons and tomes",
+      "weaponLevels": {
+        "base": "weaponMaxLevelsPerAmount",
+        "formula": "amount * weaponMaxLevelsPerAmount"
+      },
+      "tomeLevels": {
+        "base": "tomeMaxLevelsPerAmount",
+        "formula": "amount * tomeMaxLevelsPerAmount"
+      }
+    }
+  ],
+  "fields": {
+    "weaponMaxLevelsPerAmount": "extracted from constructor",
+    "tomeMaxLevelsPerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x44F160",
+    "onInitOrAmountChangedRVA": "0x44F140",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

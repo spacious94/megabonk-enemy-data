@@ -2,11 +2,45 @@
   "name": "Beer",
   "itemId": 1,
   "internalName": "Beer",
+  "className": "ItemBeer",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "DamageMultiplier",
+      "statId": 12,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.2,
+      "scaling": "linear",
+      "formula": "amount * 0.2",
+      "description": "+20% damage per stack"
+    },
+    {
+      "stat": "MaxHealth",
+      "statId": 0,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": -0.05,
+      "scaling": "linear",
+      "formula": "amount * -0.05",
+      "description": "-5% max health per stack"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "damagePerStack": 0.2,
+    "maxHealthPerStack": -0.05
+  },
+  "implementation": {
+    "constructorRVA": "0x439690",
+    "onInitOrAmountChangedRVA": "0x439520",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

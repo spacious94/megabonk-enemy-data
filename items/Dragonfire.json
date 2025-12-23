@@ -2,11 +2,41 @@
   "name": "Dragonfire",
   "itemId": 22,
   "internalName": "Dragonfire",
+  "className": "ItemDragonfire",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 10,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "BurnProc",
+      "description": "Chance to ignite enemies on hit",
+      "procChance": {
+        "baseValue": 0.15,
+        "scaling": "linear",
+        "formula": "amount * 0.15"
+      },
+      "burnChance": {
+        "baseValue": 0.15,
+        "scaling": "linear",
+        "formula": "amount * 0.15"
+      }
+    }
+  ],
+  "fields": {
+    "procChancePerAmount": 0.15,
+    "burnChancePerAmount": 0.15
+  },
+  "implementation": {
+    "constructorRVA": "0x45BD00",
+    "onInitOrAmountChangedRVA": "0x45B9F0",
+    "procOnHitEffectsRVA": "0x45BA20",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

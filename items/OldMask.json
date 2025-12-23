@@ -1,12 +1,34 @@
 {
-  "name": "OldMask",
+  "name": "Old Mask",
   "itemId": 82,
   "internalName": "OldMask",
+  "className": "ItemOldMask",
   "rarity": "Common",
   "rarityId": 0,
   "maxAmount": 0,
   "price": 4,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "EliteSpawnChance",
+      "statId": 39,
+      "modifyType": "Addition",
+      "modifyTypeId": 0,
+      "baseValue": "eliteSpawnChancePerAmount",
+      "formula": "amount * eliteSpawnChancePerAmount",
+      "description": "Increases chance for elite enemies to spawn"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "eliteSpawnChancePerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x43C300",
+    "onInitOrAmountChangedRVA": "0x44E670",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

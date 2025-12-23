@@ -1,12 +1,48 @@
 {
-  "name": "ToxicBarrel",
+  "name": "Toxic Barrel",
   "itemId": 53,
   "internalName": "ToxicBarrel",
+  "className": "ItemToxicBarrel",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnDamageTaken",
+      "effect": "PoisonAOE",
+      "description": "Creates a poison cloud when taking damage",
+      "radius": {
+        "base": 0,
+        "perStack": 1.0,
+        "formula": "amount * 1.0"
+      },
+      "poisonStacks": {
+        "base": 5,
+        "perStack": 5,
+        "formula": "amount * 5 stacks"
+      },
+      "poisonDuration": 5.0,
+      "cooldown": 0.25,
+      "procCoefficient": 0.5
+    }
+  ],
+  "fields": {
+    "radiusPerAmount": 1.0,
+    "poisonStacksPerAmount": 5,
+    "cooldown": 0.25,
+    "poisonDuration": 5.0
+  },
+  "implementation": {
+    "constructorRVA": "0x45CF80",
+    "initRVA": "0x45CD60",
+    "cleanupRVA": "0x45CC10",
+    "onInitOrAmountChangedRVA": "0x45CEB0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

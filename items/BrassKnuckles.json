@@ -1,12 +1,43 @@
 {
-  "name": "BrassKnuckles",
+  "name": "Brass Knuckles",
   "itemId": 55,
   "internalName": "BrassKnuckles",
+  "className": "ItemBrassKnuckles",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 5,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "PreAttack",
+      "effect": "AOEDamageBonus",
+      "description": "Increases damage in an AOE around the player",
+      "damageBonus": {
+        "base": 0.25,
+        "perStack": 0.25,
+        "formula": "amount * 0.25"
+      },
+      "radius": {
+        "base": 7.0,
+        "perStack": 2.0,
+        "formula": "7.0 + (amount - 1) * 2.0"
+      }
+    }
+  ],
+  "fields": {
+    "damagePerAmount": 0.25,
+    "baseRadius": 7.0,
+    "radiusAddPerAmount": 2.0
+  },
+  "implementation": {
+    "constructorRVA": "0x43C470",
+    "onInitOrAmountChangedRVA": "0x43C3F0",
+    "preAttackRVA": "0x43C420",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": true
+  }
 }

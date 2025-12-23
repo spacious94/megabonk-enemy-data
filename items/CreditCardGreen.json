@@ -1,12 +1,37 @@
 {
-  "name": "CreditCardGreen",
+  "name": "Credit Card (Green)",
   "itemId": 64,
   "internalName": "CreditCardGreen",
+  "className": "ItemCreditCardGreen",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnChestOpen",
+      "effect": "AccumulateLuck",
+      "description": "Gain permanent luck bonus for each chest opened",
+      "luckPerChest": {
+        "base": "luckPerChestPerAmount",
+        "formula": "amount * luckPerChestPerAmount per chest"
+      }
+    }
+  ],
+  "fields": {
+    "luckPerChestPerAmount": "extracted from constructor",
+    "accumulatedLuck": "tracked at runtime"
+  },
+  "implementation": {
+    "constructorRVA": "0x43EFE0",
+    "initRVA": "0x43EC80",
+    "cleanupRVA": "0x43E8B0",
+    "onInitOrAmountChangedRVA": "0x43C210",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

@@ -2,11 +2,49 @@
   "name": "Giant Fork",
   "itemId": 12,
   "internalName": "GiantFork",
+  "className": "ItemGiantFork",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "CritChance",
+      "statId": 18,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.15,
+      "scaling": "linear",
+      "formula": "amount * 0.15",
+      "description": "+15% crit chance per stack"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "PreAttack",
+      "effect": "MegaCrit",
+      "description": "Chance for attacks to deal massive 'Mega Crit' damage",
+      "chance": {
+        "baseValue": 0.14,
+        "scaling": "linear",
+        "formula": "amount * 0.14"
+      },
+      "damageMultiplier": 4.0
+    }
+  ],
+  "fields": {
+    "critChancePerAmount": 0.15,
+    "megaCritChancePerAmount": 0.14,
+    "megaCritDamageMultiplier": 4.0
+  },
+  "implementation": {
+    "constructorRVA": "0x45F0C0",
+    "onInitOrAmountChangedRVA": "0x45EFA0",
+    "preAttackRVA": "0x45EFC0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": true
+  }
 }

@@ -2,11 +2,45 @@
   "name": "Mirror",
   "itemId": 48,
   "internalName": "Mirror",
+  "className": "ItemMirror",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnDamageTaken",
+      "effect": "ReflectDamage",
+      "description": "Blocks and reflects incoming damage back to enemies",
+      "damageMultiplier": {
+        "base": 1.0,
+        "perStack": 0.25,
+        "formula": "1.0 + (amount - 1) * 0.25"
+      },
+      "cooldown": {
+        "base": 8.0,
+        "min": 4.0
+      }
+    }
+  ],
+  "fields": {
+    "cooldown": 8.0,
+    "minCooldown": 4.0,
+    "damageMultiplier": 1.0,
+    "damagePerAmount": 0.25
+  },
+  "implementation": {
+    "constructorRVA": "0x4A2450",
+    "initRVA": "0x4A1FA0",
+    "cleanupRVA": "0x4A1EE0",
+    "onCheckStopDamageRVA": "0x4A2020",
+    "reflectDamageRVA": "0x4A20B0",
+    "tickRVA": "0x4A23C0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

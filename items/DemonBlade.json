@@ -2,11 +2,52 @@
   "name": "Demon Blade",
   "itemId": 10,
   "internalName": "DemonBlade",
+  "className": "ItemDemonBlade",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 5,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "CritChance",
+      "statId": 18,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.01,
+      "scaling": "fixed",
+      "formula": "0.01",
+      "description": "+1% crit chance (fixed, does not scale)"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "OnCrit",
+      "effect": "Heal",
+      "description": "On critical hit, chance to heal 1 HP",
+      "chance": {
+        "baseValue": 0.25,
+        "scaling": "linear",
+        "formula": "stacks * 0.25 * procCoefficient"
+      },
+      "value": 1,
+      "conditions": ["canLifesteal"]
+    }
+  ],
+  "fields": {
+    "critChance": 0.01,
+    "healChancePerStack": 0.25,
+    "totalHealChance": "calculated"
+  },
+  "implementation": {
+    "constructorRVA": "0x45A0F0",
+    "onInitOrAmountChangedRVA": "0x45A020",
+    "initRVA": "0x459B10",
+    "cleanupRVA": "0x459A70",
+    "onEnemyDamagedRVA": "0x459C80",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

@@ -2,11 +2,40 @@
   "name": "Campfire",
   "itemId": 36,
   "internalName": "Campfire",
+  "className": "ItemCampfire",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "CampfireHealing",
+      "description": "Stand still to create a campfire that heals you",
+      "healing": {
+        "baseValue": 1100,
+        "scaling": "linear",
+        "formula": "amount * 1100 HP/minute"
+      },
+      "setupTime": 0.6,
+      "distanceThreshold": 1.75
+    }
+  ],
+  "fields": {
+    "healthRegenPerMinutePerAmount": 1100.0,
+    "setupTime": 0.6,
+    "distThreshold": 1.75
+  },
+  "implementation": {
+    "constructorRVA": "0x454CB0",
+    "createCampRVA": "0x4547A0",
+    "removeCampRVA": "0x454B30",
+    "tickRVA": "0x454BC0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

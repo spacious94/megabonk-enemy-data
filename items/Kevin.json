@@ -2,11 +2,40 @@
   "name": "Kevin",
   "itemId": 57,
   "internalName": "Kevin",
+  "className": "ItemKevin",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 8,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnEnemyDamage",
+      "effect": "SelfDamageChance",
+      "description": "Chance to take damage when dealing damage to enemies",
+      "damageChance": {
+        "base": 0.25,
+        "perStack": 0.25,
+        "formula": "amount * 0.25"
+      },
+      "note": "Deals damage to player but provides some benefit (likely damage boost)"
+    }
+  ],
+  "fields": {
+    "damageChancePerAmount": 0.25
+  },
+  "implementation": {
+    "constructorRVA": "0x44C120",
+    "initRVA": "0x44BEA0",
+    "cleanupRVA": "0x44BBE0",
+    "onInitOrAmountChangedRVA": "0x43C210",
+    "tickRVA": "0x44C080",
+    "onEnemyDamagedRVA": "0x44BFF0",
+    "checkSelfDamageRVA": "0x44B860",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

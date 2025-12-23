@@ -2,11 +2,55 @@
   "name": "Gas Mask",
   "itemId": 52,
   "internalName": "Gasmask",
+  "className": "ItemGasmask",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "PoisonStacking",
+      "description": "Gain armor and overheal based on poisoned enemies",
+      "armorPerStack": {
+        "base": 0.005,
+        "formula": "0.5% armor per poisoned enemy"
+      },
+      "overhealPerStack": {
+        "base": 0.005,
+        "formula": "0.5% overheal per poisoned enemy"
+      },
+      "maxArmor": {
+        "base": 0.4,
+        "perStack": 0.4,
+        "formula": "amount * 0.4"
+      },
+      "maxOverheal": {
+        "base": 0.25,
+        "perStack": 0.25,
+        "formula": "amount * 0.25"
+      },
+      "updateInterval": 1.0
+    }
+  ],
+  "fields": {
+    "armorPerStack": 0.005,
+    "overhealPerStack": 0.005,
+    "maxArmorPerAmount": 0.4,
+    "maxOverhealPerAmount": 0.25,
+    "updateInverval": 1.0
+  },
+  "implementation": {
+    "constructorRVA": "0x444620",
+    "initRVA": "0x444100",
+    "cleanupRVA": "0x443E80",
+    "onInitOrAmountChangedRVA": "0x444230",
+    "tickRVA": "0x444320",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

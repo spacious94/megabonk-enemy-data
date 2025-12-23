@@ -2,11 +2,26 @@
   "name": "Golden Ring",
   "itemId": 79,
   "internalName": "GoldenRing",
+  "className": "ItemGoldenRing",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": false,
   "isEnabled": true,
-  "showInUnlocks": false
+  "showInUnlocks": false,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "SpecialItem",
+      "description": "Special item - not in normal item pool",
+      "note": "Likely obtained through special means"
+    }
+  ],
+  "fields": {},
+  "implementation": {
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

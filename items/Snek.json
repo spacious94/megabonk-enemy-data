@@ -2,11 +2,45 @@
   "name": "Snek",
   "itemId": 83,
   "internalName": "Snek",
+  "className": "ItemSnek",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 20,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "PoisonWithExplosion",
+      "description": "Chance to poison enemies and chance for poisoned enemies to explode",
+      "poisonChance": {
+        "base": "poisonChancePerAmount",
+        "formula": "amount * poisonChancePerAmount"
+      },
+      "explosionChance": {
+        "base": "poisonBurstChancePerAmount",
+        "formula": "amount * poisonBurstChancePerAmount"
+      },
+      "damageRatio": {
+        "base": "damageRatio",
+        "perStack": "damageRatioPerAmount"
+      }
+    }
+  ],
+  "fields": {
+    "poisonChancePerAmount": "extracted from constructor",
+    "poisonBurstChancePerAmount": "extracted from constructor",
+    "damageRatio": "extracted from constructor",
+    "damageRatioPerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x459F80",
+    "onInitOrAmountChangedRVA": "0x459610",
+    "procOnHitEffectsRVA": "0x459650",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

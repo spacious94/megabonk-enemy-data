@@ -2,11 +2,48 @@
   "name": "Ice Cube",
   "itemId": 18,
   "internalName": "IceCube",
+  "className": "ItemIceCube",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "FreezeProc",
+      "description": "Chance to deal ice damage and freeze enemies",
+      "procChance": {
+        "baseValue": 0.2,
+        "scaling": "linear",
+        "formula": "amount * 0.2"
+      },
+      "freezeChance": {
+        "baseValue": 0.4,
+        "scaling": "linear",
+        "formula": "amount * 0.4"
+      },
+      "damage": {
+        "baseRatio": 0.8,
+        "perStack": 0.4,
+        "formula": "baseDamage * (0.8 + (amount - 1) * 0.4)"
+      }
+    }
+  ],
+  "fields": {
+    "procChancePerAmount": 0.2,
+    "freezeChancePerAmount": 0.4,
+    "damageRatio": 0.8,
+    "damageRatioPerAmount": 0.4
+  },
+  "implementation": {
+    "constructorRVA": "0x4971D0",
+    "onInitOrAmountChangedRVA": "0x496F20",
+    "procOnHitEffectsRVA": "0x496F60",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

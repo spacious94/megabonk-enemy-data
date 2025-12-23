@@ -2,11 +2,40 @@
   "name": "Pumpkin",
   "itemId": 86,
   "internalName": "Pumpkin",
+  "className": "ItemPumpkin",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 9,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "ExtraPotsAndRewards",
+      "description": "Spawns extra pots and increases pot rewards",
+      "extraPots": {
+        "base": "extraPotsPerAmount",
+        "formula": "amount * extraPotsPerAmount"
+      },
+      "rewardMultiplier": {
+        "base": "rewardMultiplierPerAmount",
+        "formula": "amount * rewardMultiplierPerAmount"
+      }
+    }
+  ],
+  "fields": {
+    "extraPotsPerAmount": "extracted from constructor",
+    "rewardMultiplierPerAmount": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x44FF70",
+    "getRewardMultiplierRVA": "0x44FF50",
+    "getExtraPotsSmallRVA": "0x439270",
+    "getExtraPotsBigRVA": "0x44FF30",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

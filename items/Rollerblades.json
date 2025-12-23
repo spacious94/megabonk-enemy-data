@@ -2,11 +2,36 @@
   "name": "Turbo Skates",
   "itemId": 37,
   "internalName": "Rollerblades",
+  "className": "ItemRollerblades",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "AttackSpeed",
+      "statId": 15,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": "dynamic",
+      "scaling": "based on movement",
+      "formula": "up to amount * 0.4 based on movement",
+      "description": "Up to +40% attack speed per stack while moving"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "maxAttackSpeedPerAmount": 0.4,
+    "updateStatsInterval": 0.25
+  },
+  "implementation": {
+    "constructorRVA": "0x4A7B90",
+    "onInitOrAmountChangedRVA": "0x4A7A70",
+    "tickRVA": "0x4A7A90",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

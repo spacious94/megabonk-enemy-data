@@ -2,11 +2,38 @@
   "name": "Bob Dead",
   "itemId": 46,
   "internalName": "BobDead",
+  "className": "ItemBobDead",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnMove",
+      "effect": "SpawnGhostProjectiles",
+      "description": "Spawns ghost projectiles as you move",
+      "unitsPerProjectile": 14.0,
+      "minSpawnTime": 0.05,
+      "maxGhosts": 80
+    }
+  ],
+  "fields": {
+    "unitsPerProjectile": 14.0,
+    "minSpawnTime": 0.05,
+    "maxGhosts": 80
+  },
+  "implementation": {
+    "constructorRVA": "0x43AA40",
+    "onInitOrAmountChangedRVA": "0x43A5C0",
+    "tickRVA": "0x43A750",
+    "spawnGhostRVA": "0x43A650",
+    "getDamageRVA": "0x43A450",
+    "getDurationRVA": "0x43A4C0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

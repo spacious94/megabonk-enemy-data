@@ -2,11 +2,47 @@
   "name": "Beefy Ring",
   "itemId": 21,
   "internalName": "BeefyRing",
+  "className": "ItemBeefyRing",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "MaxHealth",
+      "statId": 0,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 10,
+      "scaling": "linear",
+      "formula": "amount * 10",
+      "description": "+10 max HP per stack"
+    },
+    {
+      "stat": "DamageMultiplier",
+      "statId": 12,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": "dynamic",
+      "scaling": "based on max HP",
+      "formula": "currentMaxHp * amount * 0.002",
+      "description": "+0.2% damage per max HP per stack"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "maxHpPerStack": 10,
+    "powerPerHpPerAmount": 0.002
+  },
+  "implementation": {
+    "constructorRVA": "0x43B470",
+    "onInitOrAmountChangedRVA": "0x43B340",
+    "refreshPowerRVA": "0x43B3D0",
+    "tickRVA": "0x43B4A0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

@@ -1,12 +1,36 @@
 {
-  "name": "SoulHarvester",
+  "name": "Soul Harvester",
   "itemId": 47,
   "internalName": "SoulHarvester",
+  "className": "ItemSoulHarvester",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 13,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnEnemyDeath",
+      "effect": "SpawnSoulProjectile",
+      "description": "When enemies die, spawn homing soul projectiles",
+      "projectiles": 2,
+      "range": 50.0
+    }
+  ],
+  "fields": {
+    "numProjectiles": 2,
+    "range": 50.0
+  },
+  "implementation": {
+    "constructorRVA": "0x4B7080",
+    "initRVA": "0x4B6520",
+    "cleanupRVA": "0x4B6430",
+    "onEnemyDiedRVA": "0x4B6590",
+    "spawnProjectileRVA": "0x4B6830",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

@@ -1,12 +1,36 @@
 {
-  "name": "UnstableTransfusion",
+  "name": "Unstable Transfusion",
   "itemId": 61,
   "internalName": "UnstableTransfusion",
+  "className": "ItemUnstableTransfusion",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "StackBloodmark",
+      "description": "Chance to apply bloodmark stacks on hit",
+      "chance": {
+        "base": 0.27,
+        "perStack": 0.27,
+        "formula": "amount * 0.27 (27% per stack)"
+      }
+    }
+  ],
+  "fields": {
+    "chanceToStackPerAmount": 0.27
+  },
+  "implementation": {
+    "constructorRVA": "0x45D5C0",
+    "onInitOrAmountChangedRVA": "0x43C210",
+    "procOnHitEffectsRVA": "0x45D4C0",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

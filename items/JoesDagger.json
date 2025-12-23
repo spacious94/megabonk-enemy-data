@@ -2,11 +2,49 @@
   "name": "Joe's Dagger",
   "itemId": 49,
   "internalName": "JoesDagger",
+  "className": "ItemJoesDagger",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 10,
   "price": 14,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnDamage",
+      "effect": "DamageAccumulation",
+      "description": "Accumulates 1% of all damage dealt into stacks",
+      "damagePerProc": 0.01,
+      "maxStacks": 999999
+    },
+    {
+      "trigger": "PreAttack",
+      "effect": "ExecuteChance",
+      "description": "Chance to instantly kill enemies based on stacks",
+      "chancePerStack": {
+        "base": 0.01,
+        "formula": "amount * 0.01"
+      },
+      "rollCooldown": 0.3
+    }
+  ],
+  "fields": {
+    "attackDamagePerProc": 0.01,
+    "executionChancePerAmount": 0.01,
+    "executionChance": 0.01,
+    "maxStacks": 999999,
+    "rollCooldown": 0.3
+  },
+  "implementation": {
+    "constructorRVA": "0x44B7B0",
+    "initRVA": "0x44B390",
+    "cleanupRVA": "0x44B030",
+    "onInitOrAmountChangedRVA": "0x44B5C0",
+    "tickRVA": "0x44B6B0",
+    "preAttackRVA": "0x44B5E0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": true
+  }
 }

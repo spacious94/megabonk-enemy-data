@@ -1,12 +1,48 @@
 {
-  "name": "Quins Mask",
+  "name": "Quin's Mask",
   "itemId": 80,
   "internalName": "QuinsMask",
+  "className": "ItemQuinsMask",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "ThornsWithSpread",
+      "description": "Reflects damage and deals spread damage to nearby enemies",
+      "thorns": {
+        "base": "thornsPerAmount",
+        "formula": "amount * thornsPerAmount"
+      },
+      "radius": {
+        "base": "baseRadius",
+        "perStack": "radiusPerAmount",
+        "max": "maxRadius"
+      },
+      "damageSpreadMultiplier": "damageSpreadMultiplier",
+      "procChance": "procChance"
+    }
+  ],
+  "fields": {
+    "thornsPerAmount": "extracted from constructor",
+    "baseRadius": "extracted from constructor",
+    "radiusPerAmount": "extracted from constructor",
+    "maxRadius": "extracted from constructor",
+    "damageSpreadMultiplier": "extracted from constructor",
+    "procChance": "extracted from constructor",
+    "maxProcsPerTick": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x450750",
+    "initRVA": "0x450070",
+    "onInitOrAmountChangedRVA": "0x450230",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

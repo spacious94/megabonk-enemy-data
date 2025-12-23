@@ -1,12 +1,55 @@
 {
-  "name": "Gloves Power",
+  "name": "Power Glove",
   "itemId": 76,
   "internalName": "GlovePower",
+  "className": "ItemGlovesPower",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "PowerAOEWithKnockback",
+      "description": "Chance on hit to deal damage in an area with knockback",
+      "procChance": {
+        "base": "procChancePerAmount",
+        "formula": "Hyperbolic scaling with 50% cap"
+      },
+      "damage": {
+        "base": "baseDamageMultiplier",
+        "formula": "Uses base damage multiplier"
+      },
+      "radius": {
+        "base": 10.0,
+        "perStack": "radiusPerAmount",
+        "formula": "10.0 + amount * radiusPerAmount"
+      },
+      "knockback": "knockbackForce",
+      "cooldown": {
+        "base": 3.2,
+        "min": 0.2,
+        "max": 2.0,
+        "formula": "3.2 - amount * 0.2, clamped between 0.2 and 2.0"
+      }
+    }
+  ],
+  "fields": {
+    "knockbackForce": "extracted from constructor",
+    "procChancePerAmount": "extracted from constructor",
+    "baseDamageMultiplier": "extracted from constructor",
+    "radiusPerAmount": "extracted from constructor",
+    "cooldown": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x447960",
+    "onInitOrAmountChangedRVA": "0x4471E0",
+    "procOnHitEffectsRVA": "0x447270",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

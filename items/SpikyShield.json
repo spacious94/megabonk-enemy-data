@@ -2,11 +2,47 @@
   "name": "Spiky Shield",
   "itemId": 2,
   "internalName": "SpikyShield",
+  "className": "ItemSpikyShield",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "Armor",
+      "statId": 4,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.1,
+      "scaling": "linear",
+      "formula": "amount * 0.1",
+      "description": "+10% armor per stack"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "Retaliation",
+      "description": "Deals retaliation damage to nearby enemies based on armor",
+      "value": {
+        "baseValue": 200.0,
+        "formula": "totalArmor * 200 * stacks"
+      },
+      "updateInterval": 1.0
+    }
+  ],
+  "fields": {
+    "armorPerAmount": 0.1,
+    "retaliationPerArmorPerAmount": 200.0
+  },
+  "implementation": {
+    "constructorRVA": "0x4B9E10",
+    "onInitOrAmountChangedRVA": "0x4B9C20",
+    "tickRVA": "0x4B9C90",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

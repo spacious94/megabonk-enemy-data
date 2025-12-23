@@ -1,12 +1,37 @@
 {
-  "name": "CreditCardRed",
+  "name": "Credit Card (Red)",
   "itemId": 63,
   "internalName": "CreditCardRed",
+  "className": "ItemCreditCardRed",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnChestOpen",
+      "effect": "AccumulateDamage",
+      "description": "Gain permanent damage bonus for each chest opened",
+      "damagePerChest": {
+        "base": "damagePerChestAmount",
+        "formula": "amount * damagePerChestAmount per chest"
+      }
+    }
+  ],
+  "fields": {
+    "damagePerChestAmount": "extracted from constructor",
+    "accumulatedDamage": "tracked at runtime"
+  },
+  "implementation": {
+    "constructorRVA": "0x43F710",
+    "initRVA": "0x43F3C0",
+    "cleanupRVA": "0x43EFF0",
+    "onInitOrAmountChangedRVA": "0x43C210",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

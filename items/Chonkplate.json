@@ -2,11 +2,45 @@
   "name": "Chonkplate",
   "itemId": 16,
   "internalName": "Chonkplate",
+  "className": "ItemChonkplate",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 10,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "Overheal",
+      "statId": 47,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.75,
+      "scaling": "linear",
+      "formula": "amount * 0.75",
+      "description": "+75% overheal capacity per stack"
+    },
+    {
+      "stat": "Lifesteal",
+      "statId": 17,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.2,
+      "scaling": "linear",
+      "formula": "amount * 0.2",
+      "description": "+20% lifesteal per stack"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "overhealPerAmount": 0.75,
+    "lifestealPerAmount": 0.2
+  },
+  "implementation": {
+    "constructorRVA": "0x454CF0",
+    "onInitOrAmountChangedRVA": "0x454B90",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

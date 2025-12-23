@@ -2,11 +2,48 @@
   "name": "Speed Boi",
   "itemId": 51,
   "internalName": "SpeedBoi",
+  "className": "ItemSpeedBoi",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 10,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnDamageTaken",
+      "effect": "TimeSlowdown",
+      "description": "Slows time when taking damage below HP threshold",
+      "hpThreshold": {
+        "base": 0.5,
+        "formula": "Triggers at 50% HP"
+      },
+      "damageMultiplier": {
+        "base": 2.0,
+        "formula": "+100% damage during slowdown"
+      },
+      "duration": {
+        "base": 2.0,
+        "perStack": 2.0,
+        "formula": "amount * 2.0 seconds"
+      },
+      "cooldown": 10.0
+    }
+  ],
+  "fields": {
+    "damageMultiplierDuringFreeze": 2.0,
+    "durationPerAmount": 2.0,
+    "normalCooldown": 10.0,
+    "slowdownHpRatio": 0.5
+  },
+  "implementation": {
+    "constructorRVA": "0x45B8F0",
+    "initRVA": "0x45B100",
+    "cleanupRVA": "0x45AC30",
+    "onInitOrAmountChangedRVA": "0x45B440",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

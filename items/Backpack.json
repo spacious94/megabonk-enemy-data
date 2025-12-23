@@ -2,11 +2,34 @@
   "name": "Backpack",
   "itemId": 34,
   "internalName": "Backpack",
+  "className": "ItemBackpack",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "Projectiles",
+      "statId": 16,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 1,
+      "scaling": "linear",
+      "formula": "amount * 1",
+      "description": "+1 projectile per stack"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "projectilesPerAmount": 1
+  },
+  "implementation": {
+    "constructorRVA": "0x438E60",
+    "onInitOrAmountChangedRVA": "0x438DE0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

@@ -1,12 +1,72 @@
 {
-  "name": "PhantomShroud",
+  "name": "Phantom Shroud",
   "itemId": 8,
   "internalName": "PhantomShroud",
+  "className": "ItemPhantomShroud",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "Evasion",
+      "statId": 5,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.05,
+      "scaling": "linear",
+      "formula": "amount * 0.05",
+      "description": "+5% evasion per stack"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "OnEvade",
+      "effect": "TemporaryBuffStacks",
+      "description": "When you evade an attack, gain temporary buff stacks",
+      "maxStacks": {
+        "formula": "amount * 4"
+      },
+      "timeout": {
+        "base": 3.0,
+        "perStack": 0.5,
+        "max": 6.0,
+        "formula": "min(3 + (amount - 1) * 0.5, 6)"
+      },
+      "buffs": {
+        "attackSpeed": {
+          "perStack": 0.25,
+          "description": "+25% attack speed per buff stack"
+        },
+        "damage": {
+          "perStack": 0.5,
+          "description": "+50% damage per buff stack"
+        }
+      }
+    }
+  ],
+  "fields": {
+    "evasionPerAmount": 0.05,
+    "damageMultiplierBase": 2.0,
+    "damageMultiplierPerAmount": 0.5,
+    "speedAdditionBase": 0.5,
+    "speedAdditionPerAmount": 0.15,
+    "timeout": 2.0,
+    "attackSpeedPerStack": 0.25,
+    "damagePerStack": 0.5
+  },
+  "implementation": {
+    "constructorRVA": "0x4A06F0",
+    "initRVA": "0x4A0390",
+    "cleanupRVA": "0x4A0210",
+    "onEvadeRVA": "0x4A03C0",
+    "onInitOrAmountChangedRVA": "0x4A0510",
+    "preAttackRVA": "0x4A0570",
+    "tickRVA": "0x4A05A0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": true
+  }
 }

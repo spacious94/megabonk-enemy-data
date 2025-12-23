@@ -1,12 +1,36 @@
 {
-  "name": "ForbiddenJuice",
+  "name": "Forbidden Juice",
   "itemId": 9,
   "internalName": "ForbiddenJuice",
+  "className": "ItemForbiddenJuice",
   "rarity": "Common",
   "rarityId": 0,
   "maxAmount": 0,
   "price": 3,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "CritChance",
+      "statId": 18,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.05,
+      "scaling": "linear",
+      "formula": "amount * critPerStack",
+      "description": "+5% crit chance per stack (estimated)"
+    }
+  ],
+  "specialEffects": [],
+  "fields": {
+    "critPerStack": 0.05
+  },
+  "implementation": {
+    "getDescriptionRVA": "0x4596C0",
+    "onInitOrAmountChangedRVA": "0x459850",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  },
+  "notes": "critPerStack value estimated - ctor not found in analysis"
 }

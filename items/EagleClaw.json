@@ -2,11 +2,45 @@
   "name": "Eagle Claw",
   "itemId": 39,
   "internalName": "EagleClaw",
+  "className": "ItemEagleClaw",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 7,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "KnockupProc",
+      "description": "Chance to knock enemies up and deal bonus damage",
+      "procChance": {
+        "baseValue": 0.08,
+        "scaling": "linear",
+        "formula": "amount * 0.08"
+      },
+      "bonusDamage": {
+        "base": 0.66,
+        "perStack": 0.66,
+        "formula": "0.66 + (amount - 1) * 0.66"
+      },
+      "knockupForce": 3.5
+    }
+  ],
+  "fields": {
+    "procChancePerAmount": 0.08,
+    "damageAddition": 0.66,
+    "damageAdditionPerAmount": 0.66,
+    "knockupForce": 3.5
+  },
+  "implementation": {
+    "constructorRVA": "0x45C430",
+    "onInitOrAmountChangedRVA": "0x45C2F0",
+    "preAttackRVA": "0x45C330",
+    "procOnHitEffectsRVA": "0x45C3A0",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": true
+  }
 }

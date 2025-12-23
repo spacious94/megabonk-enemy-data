@@ -1,12 +1,49 @@
 {
-  "name": "IdleJuice",
+  "name": "Idle Juice",
   "itemId": 56,
   "internalName": "IdleJuice",
+  "className": "ItemIdleJuice",
   "rarity": "Rare",
   "rarityId": 1,
   "maxAmount": 0,
   "price": 6,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "IdleDamageBonus",
+      "description": "Gain damage bonus while standing still",
+      "damageBonus": {
+        "base": 1.0,
+        "perStack": 1.0,
+        "formula": "amount * 1.0 (100% per stack)"
+      },
+      "chargeRate": {
+        "base": 0.04,
+        "formula": "4% damage per second while idle"
+      },
+      "setupTime": 0.6,
+      "idleThreshold": 1.75,
+      "updateInterval": 1.0
+    }
+  ],
+  "fields": {
+    "damagePerAmount": 1.0,
+    "damagePerSecond": 0.04,
+    "setupTime": 0.6,
+    "distThreshold": 1.75,
+    "updateDamageInterval": 1.0
+  },
+  "implementation": {
+    "constructorRVA": "0x44B000",
+    "onInitOrAmountChangedRVA": "0x43C210",
+    "tickRVA": "0x44AB80",
+    "createCampRVA": "0x44A8B0",
+    "removeCampRVA": "0x44AB00",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

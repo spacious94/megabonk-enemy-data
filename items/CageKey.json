@@ -1,12 +1,27 @@
 {
-  "name": "CageKeyMonke",
+  "name": "Cage Key",
   "itemId": 69,
   "internalName": "CageKey",
+  "className": "ItemCageKey",
   "rarity": "Quest",
   "rarityId": 5,
   "maxAmount": 0,
   "price": 0,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": false
+  "showInUnlocks": false,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "Passive",
+      "effect": "UnlockCage",
+      "description": "Quest item used to unlock a cage (likely to free a character)",
+      "note": "Quest item - not a regular gameplay item"
+    }
+  ],
+  "fields": {},
+  "implementation": {
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

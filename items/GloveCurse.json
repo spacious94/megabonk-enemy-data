@@ -1,12 +1,46 @@
 {
-  "name": "Gloves Cursed",
+  "name": "Curse Glove",
   "itemId": 75,
   "internalName": "GloveCurse",
+  "className": "ItemGlovesCursed",
   "rarity": "Epic",
   "rarityId": 2,
   "maxAmount": 0,
   "price": 8,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [],
+  "specialEffects": [
+    {
+      "trigger": "OnHit",
+      "effect": "CurseAOE",
+      "description": "Chance on hit to deal curse damage in an area",
+      "procChance": {
+        "base": "procChancePerAmount",
+        "formula": "amount * procChancePerAmount"
+      },
+      "damage": {
+        "base": "baseDamageMultiplier",
+        "formula": "Uses base damage multiplier"
+      },
+      "radius": "baseRadius",
+      "difficulty": "Increases game difficulty",
+      "maxHpMultiplier": "Scales with enemy max HP"
+    }
+  ],
+  "fields": {
+    "procChancePerAmount": "extracted from constructor",
+    "difficultyPerAmount": "extracted from constructor",
+    "maxHpMultiplierPerAmount": "extracted from constructor",
+    "baseDamageMultiplier": "extracted from constructor",
+    "baseRadius": "extracted from constructor"
+  },
+  "implementation": {
+    "constructorRVA": "0x446040",
+    "onInitOrAmountChangedRVA": "0x445990",
+    "procOnHitEffectsRVA": "0x445AA0",
+    "hasOnHitProc": true,
+    "hasPreAttackProc": false
+  }
 }

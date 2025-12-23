@@ -2,11 +2,74 @@
   "name": "Holy Book",
   "itemId": 54,
   "internalName": "HolyBook",
+  "className": "ItemHolyBook",
   "rarity": "Legendary",
   "rarityId": 3,
   "maxAmount": 0,
   "price": 10,
   "inItemPool": true,
   "isEnabled": true,
-  "showInUnlocks": true
+  "showInUnlocks": true,
+  "statModifiers": [
+    {
+      "stat": "MaxHealth",
+      "statId": 0,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 100,
+      "scaling": "linear",
+      "formula": "amount * 100",
+      "description": "+100 max HP per stack"
+    },
+    {
+      "stat": "HpRegen",
+      "statId": 1,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 50,
+      "scaling": "linear",
+      "formula": "amount * 50",
+      "description": "+50 HP regen per stack"
+    },
+    {
+      "stat": "Overheal",
+      "statId": 47,
+      "modifyType": "Flat",
+      "modifyTypeId": 2,
+      "baseValue": 0.25,
+      "scaling": "linear",
+      "formula": "amount * 0.25",
+      "description": "+25% overheal per stack"
+    }
+  ],
+  "specialEffects": [
+    {
+      "trigger": "OnHeal",
+      "effect": "DamageNearbyEnemies",
+      "description": "When healing, deal damage to nearby enemies",
+      "radius": {
+        "base": 5.0,
+        "perStack": 1.0,
+        "formula": "5.0 + amount * 1.0"
+      },
+      "cooldown": 1.5,
+      "procCoefficient": 0.5
+    }
+  ],
+  "fields": {
+    "maxHpPerAmount": 100.0,
+    "hpRegenPerAmount": 50.0,
+    "overhealPerAmount": 0.25,
+    "radiusPerAmount": 1.0,
+    "cooldown": 1.5
+  },
+  "implementation": {
+    "constructorRVA": "0x449F10",
+    "initRVA": "0x449730",
+    "cleanupRVA": "0x449420",
+    "onInitOrAmountChangedRVA": "0x449890",
+    "tickRVA": "0x4499D0",
+    "hasOnHitProc": false,
+    "hasPreAttackProc": false
+  }
 }

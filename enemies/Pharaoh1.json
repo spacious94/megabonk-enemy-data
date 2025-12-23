@@ -1,0 +1,38 @@
+{
+  "name": "Pharaoh1",
+  "enemyId": 34,
+  "stats": {
+    "hp": 8000,
+    "damage": 40,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 2.0,
+    "nukeProtection": true
+  },
+  "movement": {
+    "mass": 500.0,
+    "speed": 7.0,
+    "isFlying": false,
+    "teleportCooldown": 30.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": false,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 0,
+    "minStage": 0,
+    "creditCost": 40.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 5.5,
+    "colliderRadius": 1.4
+  }
+}

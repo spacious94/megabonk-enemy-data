@@ -1,0 +1,38 @@
+{
+  "name": "GhostGrave1",
+  "enemyId": 44,
+  "stats": {
+    "hp": 1100,
+    "damage": 20,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 1.0,
+    "nukeProtection": true
+  },
+  "movement": {
+    "mass": 100.0,
+    "speed": 7.0,
+    "isFlying": true,
+    "teleportCooldown": 15.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": false,
+    "canBeExecuted": false,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 0,
+    "minStage": 0,
+    "creditCost": 1.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 1.0,
+    "colliderRadius": 1.2
+  }
+}

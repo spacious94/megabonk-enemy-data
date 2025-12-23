@@ -1,0 +1,1824 @@
+[
+  {
+    "name": "Slime",
+    "enemyId": 9,
+    "stats": {
+      "hp": 6,
+      "damage": 8,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.5,
+      "isFlying": false,
+      "teleportCooldown": 8.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 0.75,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.4
+    }
+  },
+  {
+    "name": "GoblinWeak",
+    "enemyId": 12,
+    "stats": {
+      "hp": 7,
+      "damage": 15,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 30.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.1,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "Tumblebone",
+    "enemyId": 33,
+    "stats": {
+      "hp": 7,
+      "damage": 9,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 25.0,
+      "speed": 11.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.03
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.6
+    }
+  },
+  {
+    "name": "Mummy",
+    "enemyId": 8,
+    "stats": {
+      "hp": 8,
+      "damage": 13,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 5.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 0.85
+    }
+  },
+  {
+    "name": "Wisp",
+    "enemyId": 28,
+    "stats": {
+      "hp": 8,
+      "damage": 13,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 20.0,
+      "speed": 7.5,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.3
+    }
+  },
+  {
+    "name": "Ghoul",
+    "enemyId": 6,
+    "stats": {
+      "hp": 9,
+      "damage": 12,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 9.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 9,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.45,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "Bee",
+    "enemyId": 24,
+    "stats": {
+      "hp": 10,
+      "damage": 15,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.5,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 3.75,
+      "colliderRadius": 0.5
+    }
+  },
+  {
+    "name": "Ghost",
+    "enemyId": 16,
+    "stats": {
+      "hp": 10,
+      "damage": 10,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.0,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.2
+    }
+  },
+  {
+    "name": "Head",
+    "enemyId": 42,
+    "stats": {
+      "hp": 12,
+      "damage": 8,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 2.4,
+      "colliderRadius": 0.65
+    }
+  },
+  {
+    "name": "Zombie",
+    "enemyId": 41,
+    "stats": {
+      "hp": 12,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.5,
+      "isFlying": false,
+      "teleportCooldown": 12.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.4,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "CactusShooter",
+    "enemyId": 29,
+    "stats": {
+      "hp": 15,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 20.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "GoblinStrong",
+    "enemyId": 13,
+    "stats": {
+      "hp": 15,
+      "damage": 25,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 35.0,
+      "speed": 5.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 1.25,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "Scorpion",
+    "enemyId": 26,
+    "stats": {
+      "hp": 16,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": true,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 30.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.2,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 0.85,
+      "colliderRadius": 2.4
+    }
+  },
+  {
+    "name": "SkeletonDusty",
+    "enemyId": 4,
+    "stats": {
+      "hp": 16,
+      "damage": 22,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 2.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "BoomerSpider",
+    "enemyId": 22,
+    "stats": {
+      "hp": 18,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 30.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.5
+    }
+  },
+  {
+    "name": "GhostGreater",
+    "enemyId": 17,
+    "stats": {
+      "hp": 20,
+      "damage": 13,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 50.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 15.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 10.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 180.0
+    },
+    "rendering": {
+      "scale": 1.15,
+      "colliderRadius": 1.1
+    }
+  },
+  {
+    "name": "Golem",
+    "enemyId": 23,
+    "stats": {
+      "hp": 20,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 35.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 90.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.75
+    }
+  },
+  {
+    "name": "Skeleton",
+    "enemyId": 0,
+    "stats": {
+      "hp": 20,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 5.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 9,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "SkeletonArmoredDusty",
+    "enemyId": 5,
+    "stats": {
+      "hp": 25,
+      "damage": 16,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 50.0,
+      "speed": 4.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 3.0,
+      "canSpawnAfterTime": 90.0
+    },
+    "rendering": {
+      "scale": 1.35,
+      "colliderRadius": 1.35
+    }
+  },
+  {
+    "name": "ScorpionBig",
+    "enemyId": 30,
+    "stats": {
+      "hp": 30,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": true,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 60.0,
+      "speed": 6.5,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 1.1,
+      "canSpawnAfterTime": 180.0
+    },
+    "rendering": {
+      "scale": 1.4,
+      "colliderRadius": 2.5
+    }
+  },
+  {
+    "name": "SkeletonArmored",
+    "enemyId": 3,
+    "stats": {
+      "hp": 30,
+      "damage": 25,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 50.0,
+      "speed": 4.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 9,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 90.0
+    },
+    "rendering": {
+      "scale": 1.35,
+      "colliderRadius": 1.35
+    }
+  },
+  {
+    "name": "GhostPurple",
+    "enemyId": 40,
+    "stats": {
+      "hp": 40,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 5.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 50.0,
+      "speed": 8.0,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": false,
+      "maxSuckTime": 8.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 420.0
+    },
+    "rendering": {
+      "scale": 1.3,
+      "colliderRadius": 1.1
+    }
+  },
+  {
+    "name": "GoblinTank",
+    "enemyId": 14,
+    "stats": {
+      "hp": 40,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 80.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 2.0,
+      "canSpawnAfterTime": 180.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.5
+    }
+  },
+  {
+    "name": "MummyTank",
+    "enemyId": 31,
+    "stats": {
+      "hp": 45,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 80.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 2.0,
+      "canSpawnAfterTime": 180.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.5
+    }
+  },
+  {
+    "name": "SkeletonGold",
+    "enemyId": 1,
+    "stats": {
+      "hp": 50,
+      "damage": 25,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 9999.0,
+      "isRunningFromPlayer": true,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 7.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "creditCost": 10.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "SkeletonXp",
+    "enemyId": 2,
+    "stats": {
+      "hp": 50,
+      "damage": 25,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 0.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 40.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 9999.0,
+      "isRunningFromPlayer": true,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 7.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "creditCost": 10.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "MummyAncient",
+    "enemyId": 32,
+    "stats": {
+      "hp": 70,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": false
+    },
+    "movement": {
+      "mass": 80.0,
+      "speed": 5.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 2.5,
+      "canSpawnAfterTime": 360.0
+    },
+    "rendering": {
+      "scale": 2.0,
+      "colliderRadius": 1.5
+    }
+  },
+  {
+    "name": "GhostRed",
+    "enemyId": 39,
+    "stats": {
+      "hp": 100,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 50.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 50.0,
+      "speed": 10.0,
+      "isFlying": true,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": false,
+      "maxSuckTime": 1.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 720.0
+    },
+    "rendering": {
+      "scale": 1.5,
+      "colliderRadius": 1.1
+    }
+  },
+  {
+    "name": "Miniboss_Desert_Golem",
+    "enemyId": 25,
+    "stats": {
+      "hp": 250,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 4.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.2,
+      "colliderRadius": 2.5
+    }
+  },
+  {
+    "name": "Miniboss_Golem",
+    "enemyId": 15,
+    "stats": {
+      "hp": 250,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 4.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.2,
+      "colliderRadius": 2.5
+    }
+  },
+  {
+    "name": "Miniboss_Pig",
+    "enemyId": 7,
+    "stats": {
+      "hp": 250,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 3.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 6.0,
+      "isFlying": false,
+      "teleportCooldown": 10.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 1,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 2.0
+    }
+  },
+  {
+    "name": "Miniboss_Scorpion",
+    "enemyId": 27,
+    "stats": {
+      "hp": 250,
+      "damage": 35,
+      "shield": 0,
+      "isPoison": true,
+      "knockbackResistance": 3.5,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 60.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 2,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.1,
+      "colliderRadius": 8.0
+    }
+  },
+  {
+    "name": "Miniboss_Ghostham",
+    "enemyId": 49,
+    "stats": {
+      "hp": 320,
+      "damage": 45,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 3.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 6.5,
+      "isFlying": true,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.3,
+      "colliderRadius": 2.0
+    }
+  },
+  {
+    "name": "Miniboss_SkeletonKing",
+    "enemyId": 50,
+    "stats": {
+      "hp": 320,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 4.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 250.0,
+      "speed": 8.0,
+      "isFlying": false,
+      "teleportCooldown": 20.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": true,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 8,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 4.0,
+      "colliderRadius": 1.25
+    }
+  },
+  {
+    "name": "GhostGrave1",
+    "enemyId": 44,
+    "stats": {
+      "hp": 1100,
+      "damage": 20,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 100.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 15.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.0,
+      "colliderRadius": 1.2
+    }
+  },
+  {
+    "name": "GhostGrave2",
+    "enemyId": 45,
+    "stats": {
+      "hp": 2250,
+      "damage": 25,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 100.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 15.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.1,
+      "colliderRadius": 1.2
+    }
+  },
+  {
+    "name": "GhostGrave3",
+    "enemyId": 46,
+    "stats": {
+      "hp": 5500,
+      "damage": 30,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 100.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 15.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.2,
+      "colliderRadius": 1.2
+    }
+  },
+  {
+    "name": "EntStage2",
+    "enemyId": 20,
+    "stats": {
+      "hp": 8000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 2.0,
+      "colliderRadius": 3.4
+    }
+  },
+  {
+    "name": "Pharaoh1",
+    "enemyId": 34,
+    "stats": {
+      "hp": 8000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 5.5,
+      "colliderRadius": 1.4
+    }
+  },
+  {
+    "name": "Pharaoh2",
+    "enemyId": 35,
+    "stats": {
+      "hp": 8000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 5.75,
+      "colliderRadius": 1.375
+    }
+  },
+  {
+    "name": "Pharaoh3",
+    "enemyId": 36,
+    "stats": {
+      "hp": 8000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 999.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 3.0,
+      "isFlying": false,
+      "teleportCooldown": 0.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 6.0,
+      "colliderRadius": 1.375
+    }
+  },
+  {
+    "name": "EntStage1",
+    "enemyId": 19,
+    "stats": {
+      "hp": 9000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 7.0,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.6,
+      "colliderRadius": 3.4
+    }
+  },
+  {
+    "name": "GhostGrave4",
+    "enemyId": 47,
+    "stats": {
+      "hp": 9000,
+      "damage": 35,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 4.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 100.0,
+      "speed": 7.0,
+      "isFlying": true,
+      "teleportCooldown": 15.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 1.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.3,
+      "colliderRadius": 1.2
+    }
+  },
+  {
+    "name": "Bush",
+    "enemyId": 38,
+    "stats": {
+      "hp": 10000,
+      "damage": 45,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 2.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 200.0,
+      "speed": 8.5,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "EntStage3",
+    "enemyId": 21,
+    "stats": {
+      "hp": 10000,
+      "damage": 22,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 999.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 3.0,
+      "isFlying": false,
+      "teleportCooldown": 0.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 2.3,
+      "colliderRadius": 3.4
+    }
+  },
+  {
+    "name": "Bandit",
+    "enemyId": 37,
+    "stats": {
+      "hp": 11000,
+      "damage": 50,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 4.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 200.0,
+      "speed": 10.0,
+      "isFlying": false,
+      "teleportCooldown": 30.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": true,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.25,
+      "colliderRadius": 1.0
+    }
+  },
+  {
+    "name": "GhostKingData",
+    "enemyId": 43,
+    "stats": {
+      "hp": 500000,
+      "damage": 40,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 999.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 500.0,
+      "speed": 10.0,
+      "isFlying": true,
+      "teleportCooldown": 0.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 15.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 40.0,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.3,
+      "colliderRadius": 3.5
+    }
+  },
+  {
+    "name": "GhostInvincible",
+    "enemyId": 48,
+    "stats": {
+      "hp": 2147483647,
+      "damage": 2147483647,
+      "shield": 0,
+      "isPoison": false,
+      "knockbackResistance": 1.0,
+      "nukeProtection": true
+    },
+    "movement": {
+      "mass": 150.0,
+      "speed": 6.5,
+      "isFlying": true,
+      "teleportCooldown": 0.0,
+      "isRunningFromPlayer": false,
+      "minStayAtDistance": 0.0,
+      "maxStayAtDistance": 0.0
+    },
+    "other": {
+      "xp": 1,
+      "despawnTime": 0.0,
+      "canBeElite": false,
+      "canBeExecuted": false,
+      "maxSuckTime": 1.0
+    },
+    "spawning": {
+      "maps": 0,
+      "minStage": 0,
+      "creditCost": 1.5,
+      "canSpawnAfterTime": 0.0
+    },
+    "rendering": {
+      "scale": 1.4,
+      "colliderRadius": 1.1
+    }
+  }
+]

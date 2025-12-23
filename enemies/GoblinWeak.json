@@ -1,0 +1,38 @@
+{
+  "name": "GoblinWeak",
+  "enemyId": 12,
+  "stats": {
+    "hp": 7,
+    "damage": 15,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 0.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 30.0,
+    "speed": 5.0,
+    "isFlying": false,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 1,
+    "minStage": 0,
+    "creditCost": 1.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 1.1,
+    "colliderRadius": 1.0
+  }
+}

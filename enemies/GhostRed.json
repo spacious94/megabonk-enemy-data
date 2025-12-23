@@ -1,0 +1,38 @@
+{
+  "name": "GhostRed",
+  "enemyId": 39,
+  "stats": {
+    "hp": 100,
+    "damage": 30,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 50.0,
+    "nukeProtection": true
+  },
+  "movement": {
+    "mass": 50.0,
+    "speed": 10.0,
+    "isFlying": true,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": false,
+    "maxSuckTime": 1.0
+  },
+  "spawning": {
+    "maps": 8,
+    "minStage": 0,
+    "creditCost": 1.5,
+    "canSpawnAfterTime": 720.0
+  },
+  "rendering": {
+    "scale": 1.5,
+    "colliderRadius": 1.1
+  }
+}

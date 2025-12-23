@@ -1,0 +1,38 @@
+{
+  "name": "Head",
+  "enemyId": 42,
+  "stats": {
+    "hp": 12,
+    "damage": 8,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 0.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 40.0,
+    "speed": 7.0,
+    "isFlying": true,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 8,
+    "minStage": 0,
+    "creditCost": 1.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 2.4,
+    "colliderRadius": 0.65
+  }
+}

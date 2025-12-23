@@ -1,0 +1,38 @@
+{
+  "name": "SkeletonArmored",
+  "enemyId": 3,
+  "stats": {
+    "hp": 30,
+    "damage": 25,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 0.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 50.0,
+    "speed": 4.0,
+    "isFlying": false,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 9,
+    "minStage": 0,
+    "creditCost": 1.5,
+    "canSpawnAfterTime": 90.0
+  },
+  "rendering": {
+    "scale": 1.35,
+    "colliderRadius": 1.35
+  }
+}

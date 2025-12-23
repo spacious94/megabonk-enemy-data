@@ -1,0 +1,38 @@
+{
+  "name": "Miniboss_Ghostham",
+  "enemyId": 49,
+  "stats": {
+    "hp": 320,
+    "damage": 45,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 3.0,
+    "nukeProtection": true
+  },
+  "movement": {
+    "mass": 150.0,
+    "speed": 6.5,
+    "isFlying": true,
+    "teleportCooldown": 30.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": false,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 8,
+    "minStage": 0,
+    "creditCost": 40.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 1.3,
+    "colliderRadius": 2.0
+  }
+}

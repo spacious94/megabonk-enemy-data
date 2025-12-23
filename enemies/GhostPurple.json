@@ -1,0 +1,38 @@
+{
+  "name": "GhostPurple",
+  "enemyId": 40,
+  "stats": {
+    "hp": 40,
+    "damage": 20,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 5.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 50.0,
+    "speed": 8.0,
+    "isFlying": true,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": false,
+    "maxSuckTime": 8.0
+  },
+  "spawning": {
+    "maps": 8,
+    "minStage": 0,
+    "creditCost": 1.5,
+    "canSpawnAfterTime": 420.0
+  },
+  "rendering": {
+    "scale": 1.3,
+    "colliderRadius": 1.1
+  }
+}

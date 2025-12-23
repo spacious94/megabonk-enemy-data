@@ -1,0 +1,38 @@
+{
+  "name": "Golem",
+  "enemyId": 23,
+  "stats": {
+    "hp": 20,
+    "damage": 20,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 1.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 35.0,
+    "speed": 5.0,
+    "isFlying": false,
+    "teleportCooldown": 10.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 1,
+    "minStage": 0,
+    "creditCost": 1.5,
+    "canSpawnAfterTime": 90.0
+  },
+  "rendering": {
+    "scale": 1.25,
+    "colliderRadius": 1.75
+  }
+}

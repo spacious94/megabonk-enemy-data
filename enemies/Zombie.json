@@ -1,0 +1,38 @@
+{
+  "name": "Zombie",
+  "enemyId": 41,
+  "stats": {
+    "hp": 12,
+    "damage": 20,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 0.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 40.0,
+    "speed": 6.5,
+    "isFlying": false,
+    "teleportCooldown": 12.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 8,
+    "minStage": 0,
+    "creditCost": 1.0,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 1.4,
+    "colliderRadius": 1.0
+  }
+}

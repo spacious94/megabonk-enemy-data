@@ -1,0 +1,38 @@
+{
+  "name": "Slime",
+  "enemyId": 9,
+  "stats": {
+    "hp": 6,
+    "damage": 8,
+    "shield": 0,
+    "isPoison": false,
+    "knockbackResistance": 0.0,
+    "nukeProtection": false
+  },
+  "movement": {
+    "mass": 40.0,
+    "speed": 6.5,
+    "isFlying": false,
+    "teleportCooldown": 8.0,
+    "isRunningFromPlayer": false,
+    "minStayAtDistance": 0.0,
+    "maxStayAtDistance": 0.0
+  },
+  "other": {
+    "xp": 1,
+    "despawnTime": 0.0,
+    "canBeElite": true,
+    "canBeExecuted": true,
+    "maxSuckTime": 15.0
+  },
+  "spawning": {
+    "maps": 1,
+    "minStage": 0,
+    "creditCost": 0.75,
+    "canSpawnAfterTime": 0.0
+  },
+  "rendering": {
+    "scale": 1.0,
+    "colliderRadius": 1.4
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "FlameWalker",
+  "weaponId": 10,
+  "combat": {
+    "damage": 5.0,
+    "knockback": 0.0,
+    "critChance": 0.0,
+    "element": "Lightning",
+    "elementId": 3,
+    "procCoefficient": 0.8
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 0.5,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 1.5,
+    "maxDuration": 8.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.0,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

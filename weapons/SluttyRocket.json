@@ -1,0 +1,35 @@
+{
+  "name": "SluttyRocket",
+  "weaponId": 11,
+  "combat": {
+    "damage": 11.0,
+    "knockback": 2.0,
+    "critChance": 0.05,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 1.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 5.0,
+    "maxDuration": 5.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.3,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

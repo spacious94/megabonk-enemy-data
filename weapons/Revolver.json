@@ -1,0 +1,35 @@
+{
+  "name": "Revolver",
+  "weaponId": 3,
+  "combat": {
+    "damage": 5.0,
+    "knockback": 0.4,
+    "critChance": 0.05,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.9
+  },
+  "projectile": {
+    "count": 6,
+    "bounces": 0,
+    "speed": 2.0,
+    "canBounce": true
+  },
+  "timing": {
+    "attackDuration": 1.0,
+    "maxDuration": 5.0,
+    "effectDuration": 1.5,
+    "cooldown": 1.4,
+    "burstTime": 1.1,
+    "minBurstInterval": 0.02
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": 4.0
+  }
+}

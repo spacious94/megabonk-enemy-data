@@ -1,0 +1,35 @@
+{
+  "name": "Axe",
+  "weaponId": 5,
+  "combat": {
+    "damage": 6.0,
+    "knockback": 1.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.7
+  },
+  "projectile": {
+    "count": 2,
+    "bounces": 0,
+    "speed": 0.5,
+    "canBounce": true
+  },
+  "timing": {
+    "attackDuration": 0.82,
+    "maxDuration": 8.0,
+    "effectDuration": 1.5,
+    "cooldown": 1.4,
+    "burstTime": 0.0,
+    "minBurstInterval": 0.0
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "BloodMagic",
+  "weaponId": 24,
+  "combat": {
+    "damage": 9.0,
+    "knockback": 1.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 999,
+    "speed": 1.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.75,
+    "maxDuration": 0.75,
+    "effectDuration": 0.0,
+    "cooldown": 1.5,
+    "burstTime": 0.02,
+    "minBurstInterval": 0.02
+  },
+  "behavior": {
+    "amplificationMode": "Size",
+    "useVision": false,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

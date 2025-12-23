@@ -1,0 +1,34 @@
+{
+  "name": "Chunkers",
+  "weaponId": 19,
+  "combat": {
+    "damage": 12.0,
+    "knockback": 2.5,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.8
+  },
+  "projectile": {
+    "count": 3,
+    "bounces": 0,
+    "speed": 1.5,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 3.0,
+    "effectDuration": 0.0,
+    "cooldown": 1.5,
+    "burstTime": 0.0,
+    "minBurstInterval": 0.0
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": true,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

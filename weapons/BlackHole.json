@@ -1,0 +1,35 @@
+{
+  "name": "BlackHole",
+  "weaponId": 22,
+  "combat": {
+    "damage": 4.5,
+    "knockback": 6.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.7
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 20.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 2.0,
+    "maxDuration": 7.0,
+    "effectDuration": 0.0,
+    "cooldown": 1.0,
+    "burstTime": 1.5,
+    "minBurstInterval": 0.5
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

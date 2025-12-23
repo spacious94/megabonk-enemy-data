@@ -1,0 +1,35 @@
+{
+  "name": "Tornado",
+  "weaponId": 13,
+  "combat": {
+    "damage": 8.0,
+    "knockback": 3.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 999,
+    "speed": 20.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 1.2,
+    "maxDuration": 5.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.8,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

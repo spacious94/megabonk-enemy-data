@@ -1,0 +1,34 @@
+{
+  "name": "DragonsBreath",
+  "weaponId": 18,
+  "combat": {
+    "damage": 16.0,
+    "knockback": 0.5,
+    "critChance": 0.0,
+    "element": "Lightning",
+    "elementId": 3,
+    "procCoefficient": 0.7
+  },
+  "projectile": {
+    "count": 0,
+    "bounces": 0,
+    "speed": 0.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 1.5,
+    "effectDuration": 0.0,
+    "cooldown": 2.0,
+    "burstTime": 0.0,
+    "minBurstInterval": 0.0
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": true,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

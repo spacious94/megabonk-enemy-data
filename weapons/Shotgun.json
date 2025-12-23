@@ -1,0 +1,35 @@
+{
+  "name": "Shotgun",
+  "weaponId": 29,
+  "combat": {
+    "damage": 9.0,
+    "knockback": 2.5,
+    "critChance": 0.05,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 2.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.8,
+    "maxDuration": 0.8,
+    "effectDuration": 0.8,
+    "cooldown": 1.0,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.25
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": true,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

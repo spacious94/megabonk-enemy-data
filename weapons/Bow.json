@@ -1,0 +1,35 @@
+{
+  "name": "Bow",
+  "weaponId": 6,
+  "combat": {
+    "damage": 9.0,
+    "knockback": 0.5,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 99,
+    "speed": 1.5,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.5,
+    "maxDuration": 1.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.92,
+    "burstTime": 0.0,
+    "minBurstInterval": 0.0
+  },
+  "behavior": {
+    "amplificationMode": "Size",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

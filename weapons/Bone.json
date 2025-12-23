@@ -1,0 +1,35 @@
+{
+  "name": "Bone",
+  "weaponId": 1,
+  "combat": {
+    "damage": 11.0,
+    "knockback": 1.25,
+    "critChance": 0.1,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 1,
+    "speed": 0.35,
+    "canBounce": true
+  },
+  "timing": {
+    "attackDuration": 3.0,
+    "maxDuration": 10.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.4,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

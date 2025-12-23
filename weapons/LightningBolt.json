@@ -1,0 +1,35 @@
+{
+  "name": "LightningBolt",
+  "weaponId": 9,
+  "combat": {
+    "damage": 7.0,
+    "knockback": 1.0,
+    "critChance": 0.0,
+    "element": "Fire",
+    "elementId": 1,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 0.5,
+    "canBounce": true
+  },
+  "timing": {
+    "attackDuration": 1.0,
+    "maxDuration": 1.0,
+    "effectDuration": 1.5,
+    "cooldown": 1.1,
+    "burstTime": 0.3,
+    "minBurstInterval": 0.04
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": true,
+    "maxSizeMultiplier": -1.0
+  }
+}

@@ -1,15 +1,20 @@
-# Megabonk Enemy Data
+# Megabonk Game Data
 
-Extracted enemy statistics from the game **Megabonk**.
+Extracted game statistics from **Megabonk**.
 
 ## Files
 
-- `all_enemies.json` - All enemies in a single file, sorted by HP
+### Enemies
+- `all_enemies.json` - All 48 enemies in a single file, sorted by HP
 - `enemies/` - Individual JSON files for each enemy
 
-## Data Structure
+### Weapons
+- `all_weapons.json` - All 30 weapons in a single file, sorted by damage
+- `weapons/` - Individual JSON files for each weapon
 
-Each enemy has the following structure:
+---
+
+## Enemy Data Structure
 
 ```json
 {
@@ -52,9 +57,8 @@ Each enemy has the following structure:
 }
 ```
 
-## Field Descriptions
+### Enemy Field Descriptions
 
-### Stats
 | Field | Type | Description |
 |-------|------|-------------|
 | `hp` | int | Base health points |
@@ -63,34 +67,105 @@ Each enemy has the following structure:
 | `isPoison` | bool | Deals poison damage |
 | `knockbackResistance` | float | Resistance to knockback effects |
 | `nukeProtection` | bool | Immune to nuke/instakill effects |
-
-### Movement
-| Field | Type | Description |
-|-------|------|-------------|
-| `mass` | float | Physics mass |
 | `speed` | float | Movement speed |
 | `isFlying` | bool | Can fly/hover |
-| `teleportCooldown` | float | Seconds between teleports |
-| `isRunningFromPlayer` | bool | Flees from player |
-| `minStayAtDistance` | float | Minimum distance to maintain from player |
-| `maxStayAtDistance` | float | Maximum distance to maintain from player |
-
-### Other
-| Field | Type | Description |
-|-------|------|-------------|
 | `xp` | int | Experience reward on kill |
-| `despawnTime` | float | Time before despawn (0 = never) |
 | `canBeElite` | bool | Can spawn as elite variant |
-| `canBeExecuted` | bool | Can be executed/finished |
-| `maxSuckTime` | float | Max time for vacuum/suction abilities |
+| `creditCost` | float | Spawn cost in wave budget |
 
-### Spawning
+---
+
+## Weapon Data Structure
+
+```json
+{
+  "name": "Sword",
+  "weaponId": 2,
+  "combat": {
+    "damage": 11.0,
+    "knockback": 2.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.8
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 1.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.5,
+    "maxDuration": 0.5,
+    "effectDuration": 1.5,
+    "cooldown": 0.75,
+    "burstTime": 0.5,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}
+```
+
+### Weapon Field Descriptions
+
 | Field | Type | Description |
 |-------|------|-------------|
-| `maps` | int | Bitmask of maps where enemy can spawn |
-| `minStage` | int | Minimum stage/wave to spawn |
-| `creditCost` | float | Spawn cost in wave budget |
-| `canSpawnAfterTime` | float | Seconds into run before can spawn |
+| `damage` | float | Base damage per hit |
+| `knockback` | float | Knockback force |
+| `critChance` | float | Base critical hit chance (0.0-1.0) |
+| `element` | string | Damage type (Physical, Fire, Ice, Lightning, Poison) |
+| `procCoefficient` | float | Multiplier for on-hit effects |
+| `projectile.count` | int | Number of projectiles per attack |
+| `projectile.bounces` | int | Times projectiles can bounce |
+| `cooldown` | float | Time between attacks |
+| `isAura` | bool | Constant damage aura weapon |
+| `canMultiHit` | bool | Can hit same enemy multiple times |
+
+---
+
+## Weapon Summary
+
+| Weapon | Damage | Knockback | Element | Cooldown | Projectiles |
+|--------|--------|-----------|---------|----------|-------------|
+| Sniper | 22 | 4.0 | Physical | 1.0 | 1 |
+| DragonsBreath | 16 | 0.5 | Physical | 0.6 | 1 |
+| Shotgun | 14 | 2.0 | Physical | 0.9 | 6 |
+| Chunkers | 12 | 2.5 | Physical | 1.0 | 1 |
+| CorruptedSword | 12 | 2.0 | Physical | 0.7 | 1 |
+| HeroSword | 11 | 2.0 | Physical | 0.7 | 1 |
+| Bone | 11 | 1.25 | Physical | 0.75 | 1 |
+| Sword | 11 | 2.0 | Physical | 0.75 | 1 |
+| Aegis | 10 | 3.0 | Physical | 1.2 | 1 |
+| FireStaff | 10 | 1.0 | Physical | 0.6 | 1 |
+| Katana | 10 | 1.5 | Physical | 0.65 | 1 |
+| Bananarang | 9 | 1.0 | Physical | 0.65 | 1 |
+| BloodMagic | 9 | 1.0 | Physical | 0.8 | 1 |
+| Bow | 9 | 0.5 | Physical | 0.45 | 1 |
+| Dexecutioner | 9 | 1.0 | Physical | 0.6 | 1 |
+| FrostWalker | 9 | 0.5 | Physical | 0.6 | 1 |
+| Scythe | 9 | 1.0 | Physical | 0.5 | 1 |
+| Revolver | 8 | 0.75 | Physical | 0.5 | 1 |
+| SpaceNoodle | 7 | 1.5 | Physical | 0.7 | 1 |
+| Axe | 6 | 1.0 | Physical | 0.75 | 3 |
+| Aura | 6 | 0.5 | Physical | 1.0 | 1 |
+| LightningBolt | 6 | 0.5 | Lightning | 0.6 | 1 |
+| SluttyRocket | 6 | 3.0 | Physical | 0.9 | 1 |
+| Tornado | 6 | 0.5 | Physical | 0.8 | 1 |
+| FlameWalker | 5 | 0.0 | Physical | 0.6 | 1 |
+| WirelessDagger | 5 | 0.5 | Physical | 0.4 | 1 |
+| BlackHole | 4.5 | 6.0 | Physical | 1.0 | 1 |
+| Mines | 3 | 5.0 | Physical | 0.65 | 1 |
+| PoisonFlask | 3 | 0.5 | Poison | 0.6 | 1 |
+| Dice | 0 | 2.5 | Physical | 0.5 | 1 |
 
 ## Enemy Summary
 
@@ -104,7 +179,6 @@ Each enemy has the following structure:
 | Ghoul | 9 | 12 | 7.5 | No | Yes |
 | Bee | 10 | 15 | 10.0 | Yes | Yes |
 | Ghost | 10 | 10 | 7.0 | Yes | Yes |
-| Bush | 10000 | 45 | 0.0 | No | No |
 | Head | 12 | 8 | 8.0 | No | Yes |
 | Zombie | 12 | 20 | 4.5 | No | Yes |
 | CactusShooter | 15 | 30 | 0.0 | No | Yes |
@@ -134,16 +208,13 @@ Each enemy has the following structure:
 | GhostGrave1 | 1100 | 20 | 7.0 | Yes | No |
 | GhostGrave2 | 2250 | 25 | 7.0 | Yes | No |
 | GhostGrave3 | 5500 | 30 | 7.0 | Yes | No |
-| EntStage2 | 8000 | 40 | 0.0 | No | No |
-| Pharaoh1 | 8000 | 40 | 5.0 | No | No |
-| Pharaoh2 | 8000 | 40 | 5.0 | No | No |
-| Pharaoh3 | 8000 | 40 | 5.0 | No | No |
-| EntStage1 | 9000 | 40 | 0.0 | No | No |
+| Pharaoh1-3 | 8000 | 40 | 5.0 | No | No |
+| EntStage1-3 | 8000-10000 | 22-40 | 0.0 | No | No |
 | GhostGrave4 | 9000 | 35 | 7.0 | Yes | No |
-| EntStage3 | 10000 | 22 | 0.0 | No | No |
+| Bush | 10000 | 45 | 0.0 | No | No |
 | Bandit | 11000 | 50 | 7.0 | No | No |
-| GhostKingData | 500000 | 40 | 4.0 | Yes | No |
-| GhostInvincible | 2147483647 | 2147483647 | 0.0 | Yes | No |
+| GhostKing | 500000 | 40 | 4.0 | Yes | No |
+| GhostInvincible | MAX_INT | MAX_INT | 0.0 | Yes | No |
 
 ## License
 

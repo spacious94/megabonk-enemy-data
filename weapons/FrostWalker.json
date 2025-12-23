@@ -1,0 +1,34 @@
+{
+  "name": "FrostWalker",
+  "weaponId": 16,
+  "combat": {
+    "damage": 9.0,
+    "knockback": 0.5,
+    "critChance": 0.0,
+    "element": "Ice",
+    "elementId": 2,
+    "procCoefficient": 0.9
+  },
+  "projectile": {
+    "count": 0,
+    "bounces": 0,
+    "speed": 0.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 1.6,
+    "effectDuration": 0.0,
+    "cooldown": 1.25,
+    "burstTime": 0.0,
+    "minBurstInterval": 0.0
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": true,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

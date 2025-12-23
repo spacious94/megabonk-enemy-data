@@ -1,0 +1,35 @@
+{
+  "name": "FireStaff",
+  "weaponId": 0,
+  "combat": {
+    "damage": 10.0,
+    "knockback": 1.0,
+    "critChance": 0.0,
+    "element": "Lightning",
+    "elementId": 3,
+    "procCoefficient": 1.0
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 0.5,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 2.0,
+    "maxDuration": 5.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.5,
+    "burstTime": 1.0,
+    "minBurstInterval": 0.15
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": false,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

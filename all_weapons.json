@@ -1,0 +1,1045 @@
+[
+  {
+    "name": "Sniper",
+    "weaponId": 15,
+    "combat": {
+      "damage": 22.0,
+      "knockback": 4.0,
+      "critChance": 0.05,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.5
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 2.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 1.0,
+      "maxDuration": 1.0,
+      "effectDuration": 1.5,
+      "cooldown": 1.0,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.3
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": true,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "DragonsBreath",
+    "weaponId": 18,
+    "combat": {
+      "damage": 16.0,
+      "knockback": 0.5,
+      "critChance": 0.0,
+      "element": "Lightning",
+      "elementId": 3,
+      "procCoefficient": 0.7
+    },
+    "projectile": {
+      "count": 0,
+      "bounces": 0,
+      "speed": 0.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 1.5,
+      "effectDuration": 0.0,
+      "cooldown": 2.0,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Chunkers",
+    "weaponId": 19,
+    "combat": {
+      "damage": 12.0,
+      "knockback": 2.5,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 3,
+      "bounces": 0,
+      "speed": 1.5,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 3.0,
+      "effectDuration": 0.0,
+      "cooldown": 1.5,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "CorruptedSword",
+    "weaponId": 28,
+    "combat": {
+      "damage": 12.0,
+      "knockback": 2.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 30.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.8,
+      "burstTime": 0.8,
+      "minBurstInterval": 0.14
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Bone",
+    "weaponId": 1,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 1.25,
+      "critChance": 0.1,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 1,
+      "speed": 0.35,
+      "canBounce": true
+    },
+    "timing": {
+      "attackDuration": 3.0,
+      "maxDuration": 10.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.4,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "HeroSword",
+    "weaponId": 27,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 2.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 30.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.75,
+      "burstTime": 0.75,
+      "minBurstInterval": 0.15
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Katana",
+    "weaponId": 23,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.95
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 0.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 0.5,
+      "effectDuration": 0.0,
+      "cooldown": 0.4,
+      "burstTime": 0.5,
+      "minBurstInterval": 0.02
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Scythe",
+    "weaponId": 30,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 0.5,
+      "effectDuration": 1.5,
+      "cooldown": 0.85,
+      "burstTime": 1.5,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "SluttyRocket",
+    "weaponId": 11,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 2.0,
+      "critChance": 0.05,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 5.0,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.3,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Sword",
+    "weaponId": 2,
+    "combat": {
+      "damage": 11.0,
+      "knockback": 2.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 0.5,
+      "effectDuration": 1.5,
+      "cooldown": 0.75,
+      "burstTime": 0.5,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Aegis",
+    "weaponId": 7,
+    "combat": {
+      "damage": 10.0,
+      "knockback": 3.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 2,
+      "bounces": 1,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.0,
+      "effectDuration": 1.5,
+      "cooldown": 1.5,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Duration",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "FireStaff",
+    "weaponId": 0,
+    "combat": {
+      "damage": 10.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Lightning",
+      "elementId": 3,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 0.5,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 2.0,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.5,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.15
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": false,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Mines",
+    "weaponId": 20,
+    "combat": {
+      "damage": 10.0,
+      "knockback": 4.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 4.0,
+      "effectDuration": 0.0,
+      "cooldown": 1.0,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.25
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "SpaceNoodle",
+    "weaponId": 17,
+    "combat": {
+      "damage": 10.0,
+      "knockback": 0.5,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.75
+    },
+    "projectile": {
+      "count": 0,
+      "bounces": 0,
+      "speed": 0.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 4.0,
+      "effectDuration": 0.0,
+      "cooldown": 1.0,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Bananarang",
+    "weaponId": 12,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 999,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 3.0,
+      "maxDuration": 10.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.8,
+      "burstTime": 0.9,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Size",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "BloodMagic",
+    "weaponId": 24,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 999,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.75,
+      "maxDuration": 0.75,
+      "effectDuration": 0.0,
+      "cooldown": 1.5,
+      "burstTime": 0.02,
+      "minBurstInterval": 0.02
+    },
+    "behavior": {
+      "amplificationMode": "Size",
+      "useVision": false,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Bow",
+    "weaponId": 6,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 0.5,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 99,
+      "speed": 1.5,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 1.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.92,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Size",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Dexecutioner",
+    "weaponId": 14,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 1.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.5,
+      "maxDuration": 0.5,
+      "effectDuration": 1.5,
+      "cooldown": 0.8,
+      "burstTime": 0.8,
+      "minBurstInterval": 0.04
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "FrostWalker",
+    "weaponId": 16,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 0.5,
+      "critChance": 0.0,
+      "element": "Ice",
+      "elementId": 2,
+      "procCoefficient": 0.9
+    },
+    "projectile": {
+      "count": 0,
+      "bounces": 0,
+      "speed": 0.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 1.6,
+      "effectDuration": 0.0,
+      "cooldown": 1.25,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Shotgun",
+    "weaponId": 29,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 2.5,
+      "critChance": 0.05,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 2.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.8,
+      "maxDuration": 0.8,
+      "effectDuration": 0.8,
+      "cooldown": 1.0,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.25
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": true,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "WirelessDagger",
+    "weaponId": 25,
+    "combat": {
+      "damage": 9.0,
+      "knockback": 0.4,
+      "critChance": 0.0,
+      "element": "Fire",
+      "elementId": 1,
+      "procCoefficient": 0.9
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 1,
+      "speed": 0.75,
+      "canBounce": true
+    },
+    "timing": {
+      "attackDuration": 2.5,
+      "maxDuration": 8.0,
+      "effectDuration": 0.0,
+      "cooldown": 0.5,
+      "burstTime": 1.1,
+      "minBurstInterval": 0.02
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": 3.5
+    }
+  },
+  {
+    "name": "Tornado",
+    "weaponId": 13,
+    "combat": {
+      "damage": 8.0,
+      "knockback": 3.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 999,
+      "speed": 20.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 1.2,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.8,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "LightningBolt",
+    "weaponId": 9,
+    "combat": {
+      "damage": 7.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Fire",
+      "elementId": 1,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 0.5,
+      "canBounce": true
+    },
+    "timing": {
+      "attackDuration": 1.0,
+      "maxDuration": 1.0,
+      "effectDuration": 1.5,
+      "cooldown": 1.1,
+      "burstTime": 0.3,
+      "minBurstInterval": 0.04
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Aura",
+    "weaponId": 4,
+    "combat": {
+      "damage": 6.0,
+      "knockback": 0.5,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.7
+    },
+    "projectile": {
+      "count": 0,
+      "bounces": 0,
+      "speed": 0.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 0.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.3,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": true,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Axe",
+    "weaponId": 5,
+    "combat": {
+      "damage": 6.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.7
+    },
+    "projectile": {
+      "count": 2,
+      "bounces": 0,
+      "speed": 0.5,
+      "canBounce": true
+    },
+    "timing": {
+      "attackDuration": 0.82,
+      "maxDuration": 8.0,
+      "effectDuration": 1.5,
+      "cooldown": 1.4,
+      "burstTime": 0.0,
+      "minBurstInterval": 0.0
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "FlameWalker",
+    "weaponId": 10,
+    "combat": {
+      "damage": 5.0,
+      "knockback": 0.0,
+      "critChance": 0.0,
+      "element": "Lightning",
+      "elementId": 3,
+      "procCoefficient": 0.8
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 0.5,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 1.5,
+      "maxDuration": 8.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.0,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.1
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Revolver",
+    "weaponId": 3,
+    "combat": {
+      "damage": 5.0,
+      "knockback": 0.4,
+      "critChance": 0.05,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.9
+    },
+    "projectile": {
+      "count": 6,
+      "bounces": 0,
+      "speed": 2.0,
+      "canBounce": true
+    },
+    "timing": {
+      "attackDuration": 1.0,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 1.4,
+      "burstTime": 1.1,
+      "minBurstInterval": 0.02
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": 4.0
+    }
+  },
+  {
+    "name": "BlackHole",
+    "weaponId": 22,
+    "combat": {
+      "damage": 4.5,
+      "knockback": 6.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.7
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 20.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 2.0,
+      "maxDuration": 7.0,
+      "effectDuration": 0.0,
+      "cooldown": 1.0,
+      "burstTime": 1.5,
+      "minBurstInterval": 0.5
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "PoisonFlask",
+    "weaponId": 21,
+    "combat": {
+      "damage": 1.0,
+      "knockback": 1.0,
+      "critChance": 0.0,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 0.9
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 16.0,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 3.0,
+      "maxDuration": 5.0,
+      "effectDuration": 0.0,
+      "cooldown": 0.8,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.2
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": true,
+      "maxSizeMultiplier": -1.0
+    }
+  },
+  {
+    "name": "Dice",
+    "weaponId": 26,
+    "combat": {
+      "damage": 0.0,
+      "knockback": 2.5,
+      "critChance": 0.1,
+      "element": "Physical",
+      "elementId": 0,
+      "procCoefficient": 1.0
+    },
+    "projectile": {
+      "count": 1,
+      "bounces": 0,
+      "speed": 0.6,
+      "canBounce": false
+    },
+    "timing": {
+      "attackDuration": 2.0,
+      "maxDuration": 5.0,
+      "effectDuration": 1.5,
+      "cooldown": 0.5,
+      "burstTime": 1.0,
+      "minBurstInterval": 0.15
+    },
+    "behavior": {
+      "amplificationMode": "Normal",
+      "useVision": true,
+      "canMultiHit": true,
+      "hasCrosshair": false,
+      "isAura": false,
+      "onlySpawnWhenCloseEnemies": false,
+      "maxSizeMultiplier": -1.0
+    }
+  }
+]

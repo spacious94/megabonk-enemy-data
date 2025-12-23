@@ -1,0 +1,35 @@
+{
+  "name": "Scythe",
+  "weaponId": 30,
+  "combat": {
+    "damage": 11.0,
+    "knockback": 1.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.8
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 1.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.5,
+    "maxDuration": 0.5,
+    "effectDuration": 1.5,
+    "cooldown": 0.85,
+    "burstTime": 1.5,
+    "minBurstInterval": 0.1
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "CorruptedSword",
+  "weaponId": 28,
+  "combat": {
+    "damage": 12.0,
+    "knockback": 2.0,
+    "critChance": 0.0,
+    "element": "Physical",
+    "elementId": 0,
+    "procCoefficient": 0.8
+  },
+  "projectile": {
+    "count": 1,
+    "bounces": 0,
+    "speed": 30.0,
+    "canBounce": false
+  },
+  "timing": {
+    "attackDuration": 0.5,
+    "maxDuration": 5.0,
+    "effectDuration": 1.5,
+    "cooldown": 0.8,
+    "burstTime": 0.8,
+    "minBurstInterval": 0.14
+  },
+  "behavior": {
+    "amplificationMode": "Normal",
+    "useVision": true,
+    "canMultiHit": true,
+    "hasCrosshair": false,
+    "isAura": false,
+    "onlySpawnWhenCloseEnemies": false,
+    "maxSizeMultiplier": -1.0
+  }
+}

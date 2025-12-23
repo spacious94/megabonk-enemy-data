@@ -1,0 +1,12 @@
+{
+  "name": "Anvil",
+  "itemId": 41,
+  "internalName": "Anvil",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 1,
+  "price": 12,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

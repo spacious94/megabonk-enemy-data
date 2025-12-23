@@ -1,0 +1,12 @@
+{
+  "name": "Golden Ring",
+  "itemId": 79,
+  "internalName": "GoldenRing",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": false,
+  "isEnabled": true,
+  "showInUnlocks": false
+}

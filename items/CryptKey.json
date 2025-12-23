@@ -1,0 +1,12 @@
+{
+  "name": "CryptKey",
+  "itemId": 81,
+  "internalName": "CryptKey",
+  "rarity": "Quest",
+  "rarityId": 5,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": false
+}

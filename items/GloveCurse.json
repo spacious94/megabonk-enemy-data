@@ -1,0 +1,12 @@
+{
+  "name": "Gloves Cursed",
+  "itemId": 75,
+  "internalName": "GloveCurse",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 8,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

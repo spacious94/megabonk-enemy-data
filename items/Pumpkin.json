@@ -1,0 +1,12 @@
+{
+  "name": "Pumpkin",
+  "itemId": 86,
+  "internalName": "Pumpkin",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 9,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

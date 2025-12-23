@@ -1,0 +1,12 @@
+{
+  "name": "Kevin",
+  "itemId": 57,
+  "internalName": "Kevin",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 8,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

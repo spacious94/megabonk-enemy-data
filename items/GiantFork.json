@@ -1,0 +1,12 @@
+{
+  "name": "Giant Fork",
+  "itemId": 12,
+  "internalName": "GiantFork",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Leeching Crystal",
+  "itemId": 66,
+  "internalName": "LeechingCrystal",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 7,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

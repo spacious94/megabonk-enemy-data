@@ -1,0 +1,12 @@
+{
+  "name": "Gas Mask",
+  "itemId": 52,
+  "internalName": "Gasmask",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 7,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

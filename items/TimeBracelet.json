@@ -1,0 +1,12 @@
+{
+  "name": "TimeBracelet",
+  "itemId": 71,
+  "internalName": "TimeBracelet",
+  "rarity": "Common",
+  "rarityId": 0,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

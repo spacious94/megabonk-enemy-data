@@ -1,0 +1,12 @@
+{
+  "name": "Beer",
+  "itemId": 1,
+  "internalName": "Beer",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

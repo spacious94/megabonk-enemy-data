@@ -1,0 +1,12 @@
+{
+  "name": "Golden Sneakers",
+  "itemId": 14,
+  "internalName": "GoldenSneakers",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 5,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

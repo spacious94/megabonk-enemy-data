@@ -1,0 +1,12 @@
+{
+  "name": "Gamer Goggles",
+  "itemId": 60,
+  "internalName": "GamerGoggles",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 7,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

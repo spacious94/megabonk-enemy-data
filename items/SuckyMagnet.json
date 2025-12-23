@@ -1,0 +1,12 @@
+{
+  "name": "Sucky Magnet",
+  "itemId": 33,
+  "internalName": "SuckyMagnet",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 10,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

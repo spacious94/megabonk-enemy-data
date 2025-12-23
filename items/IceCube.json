@@ -1,0 +1,12 @@
+{
+  "name": "Ice Cube",
+  "itemId": 18,
+  "internalName": "IceCube",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

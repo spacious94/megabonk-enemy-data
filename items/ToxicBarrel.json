@@ -1,0 +1,12 @@
+{
+  "name": "ToxicBarrel",
+  "itemId": 53,
+  "internalName": "ToxicBarrel",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 7,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

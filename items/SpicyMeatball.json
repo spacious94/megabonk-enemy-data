@@ -1,0 +1,12 @@
+{
+  "name": "Spicy Meatball",
+  "itemId": 15,
+  "internalName": "SpicyMeatball",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

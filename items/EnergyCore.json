@@ -1,0 +1,12 @@
+{
+  "name": "Energy Core",
+  "itemId": 44,
+  "internalName": "EnergyCore",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 0,
+  "price": 11,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Slutty Cannon",
+  "itemId": 29,
+  "internalName": "SluttyCannon",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 7,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Gloves Bloody",
+  "itemId": 74,
+  "internalName": "GloveBlood",
+  "rarity": "Epic",
+  "rarityId": 2,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

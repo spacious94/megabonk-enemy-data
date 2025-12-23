@@ -1,0 +1,12 @@
+{
+  "name": "Overpowered Lamp",
+  "itemId": 26,
+  "internalName": "OverpoweredLamp",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 2,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

@@ -12,6 +12,10 @@ Extracted game statistics from **Megabonk**.
 - `all_weapons.json` - All 30 weapons in a single file, sorted by damage
 - `weapons/` - Individual JSON files for each weapon
 
+### Items
+- `all_items.json` - All 86 items in a single file, sorted by item ID
+- `items/` - Individual JSON files for each item
+
 ---
 
 ## Enemy Data Structure
@@ -225,6 +229,131 @@ Boss enemies have `"isBoss": true` in their data files. These include:
 | Bandit | 11000 | 50 | 7.0 | No | No |
 | GhostKing | 500000 | 40 | 4.0 | Yes | No |
 | GhostInvincible | MAX_INT | MAX_INT | 0.0 | Yes | No |
+
+---
+
+## Item Data Structure
+
+```json
+{
+  "name": "Clover",
+  "itemId": 35,
+  "internalName": "Clover",
+  "rarity": "Common",
+  "rarityId": 0,
+  "maxAmount": 0,
+  "price": 0,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}
+```
+
+### Item Field Descriptions
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | string | Display name |
+| `itemId` | int | Internal item ID (EItem enum) |
+| `internalName` | string | Code reference name |
+| `rarity` | string | Common, Rare, Epic, Legendary, Corrupted, or Quest |
+| `rarityId` | int | Rarity ID (0-5) |
+| `maxAmount` | int | Stack limit (0 = unlimited) |
+| `price` | int | Shop price |
+| `inItemPool` | bool | Can appear in normal item pools |
+| `isEnabled` | bool | Item is active in game |
+| `showInUnlocks` | bool | Visible in unlocks menu |
+
+## Item Summary
+
+| Item | Rarity | Max Stack | Price | In Pool |
+|------|--------|-----------|-------|---------|
+| Battery | Common | Unlimited | 3 | Yes |
+| Borgar | Common | Unlimited | 0 | Yes |
+| Boss Buster | Common | Unlimited | 3 | Yes |
+| Cactus | Common | Unlimited | 4 | Yes |
+| Clover | Common | Unlimited | 0 | Yes |
+| Cursed Doll | Common | Unlimited | 3 | Yes |
+| ForbiddenJuice | Common | Unlimited | 3 | Yes |
+| Ghost | Common | Unlimited | 4 | Yes |
+| Golden Glove | Common | Unlimited | 0 | Yes |
+| GymSauce | Common | Unlimited | 0 | Yes |
+| IceCrystal | Common | Unlimited | 4 | Yes |
+| Key | Common | Unlimited | 3 | Yes |
+| Medkit | Common | Unlimited | 0 | Yes |
+| Moldy Cheese | Common | Unlimited | 0 | Yes |
+| Oats | Common | Unlimited | 0 | Yes |
+| OldMask | Common | Unlimited | 4 | Yes |
+| Skuleg | Common | Unlimited | 4 | Yes |
+| Slippery Ring | Common | Unlimited | 0 | Yes |
+| Tactical Glasses | Common | Unlimited | 3 | Yes |
+| TimeBracelet | Common | Unlimited | 0 | Yes |
+| Turbo Socks | Common | Unlimited | 3 | Yes |
+| Wrench | Common | Unlimited | 0 | Yes |
+| Backpack | Rare | Unlimited | 0 | Yes |
+| Beacon | Rare | Unlimited | 0 | Yes |
+| Beer | Rare | Unlimited | 0 | Yes |
+| BrassKnuckles | Rare | Unlimited | 5 | Yes |
+| Campfire | Rare | Unlimited | 0 | Yes |
+| Cowards Cloak | Rare | Unlimited | 0 | Yes |
+| CreditCardRed | Rare | Unlimited | 0 | Yes |
+| Demon Blade | Rare | Unlimited | 5 | Yes |
+| Demonic Blood | Rare | Unlimited | 5 | Yes |
+| Echo Shard | Rare | Unlimited | 5 | Yes |
+| Electric Plug | Rare | Unlimited | 0 | Yes |
+| Flappy Feathers | Rare | Unlimited | 0 | Yes |
+| Glove Lightning | Rare | Unlimited | 0 | Yes |
+| Glove Poison | Rare | Unlimited | 5 | Yes |
+| Golden Shield | Rare | Unlimited | 0 | Yes |
+| Golden Sneakers | Rare | Unlimited | 5 | Yes |
+| IdleJuice | Rare | Unlimited | 6 | Yes |
+| Kevin | Rare | Unlimited | 8 | Yes |
+| Leeching Crystal | Rare | Unlimited | 7 | Yes |
+| PhantomShroud | Rare | Unlimited | 0 | Yes |
+| Pumpkin | Rare | Unlimited | 9 | Yes |
+| UnstableTransfusion | Rare | Unlimited | 0 | Yes |
+| Beefy Ring | Epic | Unlimited | 0 | Yes |
+| Bob Dead | Epic | Unlimited | 7 | Yes |
+| Bobs Lantern | Epic | Unlimited | 9 | Yes |
+| CreditCardGreen | Epic | Unlimited | 0 | Yes |
+| Demonic Soul | Epic | Unlimited | 7 | Yes |
+| Eagle Claw | Epic | Unlimited | 7 | Yes |
+| Gamer Goggles | Epic | Unlimited | 7 | Yes |
+| Gas Mask | Epic | Unlimited | 7 | Yes |
+| Gloves Bloody | Epic | Unlimited | 0 | Yes |
+| Gloves Cursed | Epic | Unlimited | 8 | Yes |
+| Grandma's Secret Tonic | Epic | Unlimited | 7 | Yes |
+| Mirror | Epic | Unlimited | 0 | Yes |
+| Quins Mask | Epic | Unlimited | 7 | Yes |
+| Scarf | Epic | Unlimited | 0 | Yes |
+| Shattered Knowledge | Epic | Unlimited | 7 | Yes |
+| Slutty Cannon | Epic | Unlimited | 7 | Yes |
+| Spiky Shield | Epic | Unlimited | 0 | Yes |
+| ToxicBarrel | Epic | Unlimited | 7 | Yes |
+| Turbo Skates | Epic | Unlimited | 7 | Yes |
+| Anvil | Legendary | 1 | 12 | Yes |
+| Bloody Cleaver | Legendary | Unlimited | 15 | Yes |
+| Bonker | Legendary | Unlimited | 0 | Yes |
+| Chonkplate | Legendary | Unlimited | 10 | Yes |
+| Dragonfire | Legendary | Unlimited | 10 | Yes |
+| Energy Core | Legendary | Unlimited | 11 | Yes |
+| Giant Fork | Legendary | Unlimited | 0 | Yes |
+| Gloves Power | Legendary | Unlimited | 0 | Yes |
+| Golden Ring | Legendary | Unlimited | 0 | No |
+| Holy Book | Legendary | Unlimited | 10 | Yes |
+| Ice Cube | Legendary | Unlimited | 0 | Yes |
+| Joe's Dagger | Legendary | 10 | 14 | Yes |
+| Lightning Orb | Legendary | Unlimited | 10 | Yes |
+| Overpowered Lamp | Legendary | 2 | 0 | Yes |
+| PotSteel | Legendary | Unlimited | 21 | Yes |
+| Snek | Legendary | Unlimited | 20 | Yes |
+| SoulHarvester | Legendary | Unlimited | 13 | Yes |
+| Speed Boi | Legendary | Unlimited | 10 | Yes |
+| Spicy Meatball | Legendary | Unlimited | 0 | Yes |
+| Sucky Magnet | Legendary | Unlimited | 10 | Yes |
+| Za Warudo | Legendary | Unlimited | 0 | Yes |
+| CageKeyMonke | Quest | Unlimited | 0 | Yes |
+| CryptKey | Quest | Unlimited | 0 | Yes |
 
 ## License
 

@@ -1,0 +1,12 @@
+{
+  "name": "Joe's Dagger",
+  "itemId": 49,
+  "internalName": "JoesDagger",
+  "rarity": "Legendary",
+  "rarityId": 3,
+  "maxAmount": 10,
+  "price": 14,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

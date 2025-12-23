@@ -1,0 +1,12 @@
+{
+  "name": "Demon Blade",
+  "itemId": 10,
+  "internalName": "DemonBlade",
+  "rarity": "Rare",
+  "rarityId": 1,
+  "maxAmount": 0,
+  "price": 5,
+  "inItemPool": true,
+  "isEnabled": true,
+  "showInUnlocks": true
+}

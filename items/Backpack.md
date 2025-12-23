@@ -49,6 +49,3 @@ Total Projectiles Bonus = stacks × 1
 - Each weapon fires (base projectiles + bonus) projectiles per attack
 - Stacks linearly with no diminishing returns
 
-## Related Items
-
-- **Echo Shard** - Also adds projectiles with different mechanics

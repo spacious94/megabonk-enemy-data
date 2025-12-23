@@ -102,13 +102,3 @@ Radius = min(6 + stacks × 1, 10)
 - Knockback is multiplied by 1.25× for shockwave hits
 - Creates a reusable DamageContainer for efficiency
 
-## Synergies
-
-- **High proc coefficient weapons** - More chances to trigger shockwaves
-- **Multi-hit weapons** - Each hit can proc independently
-- **Damage items** - Base damage affects shockwave damage
-
-## Related Items
-
-- **Echo Shard** - Another on-hit proc item
-- **Lightning Orb** - Chain damage mechanic

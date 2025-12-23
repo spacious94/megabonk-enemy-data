@@ -57,6 +57,3 @@ Luck increases the probability of favorable random events:
 - The Luck stat affects many probability-based systems in the game
 - Stacks linearly with no cap
 
-## Related Items
-
-- **Golden Glove** - Also affects item quality

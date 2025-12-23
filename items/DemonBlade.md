@@ -84,8 +84,3 @@ Heal Rolls = floor(Total Heal Chance) + (random < remainder ? 1 : 0)
 - Must pass `CanLifesteal()` check (blocked by certain debuffs)
 - Uses hypergeometric distribution for multiple heal rolls when chance exceeds 100%
 
-## Related Items
-
-- **Leeching Crystal** - Alternative lifesteal mechanic
-- **Demonic Blood** - Other demonic-themed item
-- **Demonic Soul** - Other demonic-themed item
